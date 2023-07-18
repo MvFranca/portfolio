@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100vw;
+  text-align: center;
+}
+
+body{
+  overflow-x: hidden;
+}
