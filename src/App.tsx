@@ -1,7 +1,8 @@
-import { useState } from 'react'
+
 import './App.css'
 import Inicio from './ui/components/inicio/Inicio'
 import Sobre from './ui/components/sobre/sobre'
+import Habilidades from './ui/components/habilidades/Habilidades'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <>
       <Inicio/>
       <Sobre/>
+      <Habilidades/>
     </>
   )
 }

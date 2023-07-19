@@ -42,6 +42,31 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.carousel .control-dots {
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  margin-bottom: -10px;
+  display: none;
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 8px solid #454545;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 8px solid #454545;
+}
+
+.carousel.carousel-slider .control-arrow{
+  height: max-content;
+  margin: auto;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: transparent;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -54,3 +79,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+

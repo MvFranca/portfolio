@@ -1,7 +1,7 @@
 import { Fragment } from "react"
 
 import styles from "../../styles/Inicio/Inicio.module.css"
-import styles1 from "../../styles/Inicio/InicioMobile.module.css"
+
 import IconBxDownArrowCircle from "../../icons/IconArrowDown"
 
 const Inicio = () => {
@@ -50,14 +50,12 @@ const Inicio = () => {
                         </a>
                     </div>
                     <div className={styles.rolagem}>
-                        <a>
                             <div>
                                 <p>
                                     Scroll Down           
                                 </p>
                                 <IconBxDownArrowCircle width={30} height={30}/> 
                             </div>
-                        </a>
                     </div>
                 </section>
                 <section id={styles.imagens}>

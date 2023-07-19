@@ -1,0 +1,67 @@
+.projetos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    color: #454545;
+    overflow: hidden;
+    transition: all 0.5s;
+    overflow: auto;
+}
+
+.container{
+    overflow: hidden;
+    width: 200px;
+
+}
+
+.informacoes{
+    width: 80%;
+}
+
+.informacoes h3{
+    font-size: 0.9rem;
+    font-weight: initial;
+}
+
+.projetos h2{
+    font-size: 1.7rem;
+    padding-top: 20px;
+    overflow-x: hidden;
+}
+
+.projetos p{
+    margin-top: 10px;
+       
+    font-size: 0.75rem;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+
+
+.informacoes p{
+    text-align: center;
+    height: 30%;
+  
+}
+
+.imagem img{
+    border-radius: 3px;
+
+}
+
+.imagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+
+}
+
+
+
+

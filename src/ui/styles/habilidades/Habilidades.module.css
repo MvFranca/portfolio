@@ -1,0 +1,5 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(110deg, #929292 50%, #343232 50%);
+}
