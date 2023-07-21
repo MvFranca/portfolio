@@ -49,7 +49,7 @@ const Habilidades = () => {
       </div>
       <div className={styles.direita}>
         <p>
-           
+          {conceito}
         </p>
       </div>
     </div>
