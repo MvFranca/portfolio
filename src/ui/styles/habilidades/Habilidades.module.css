@@ -1,5 +1,62 @@
 .container{
-    height: 100vh;
+    height: max-content;
+    padding: 50px 0px;
     width: 100vw;
     background: linear-gradient(110deg, #929292 50%, #343232 50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.titulo{
+    font-size: 2rem;
+    color: #454545;
+    border-bottom: 3px solid #454545;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    font-family: Raisonne DemiBold, Arial;
+    margin-bottom: 20px;
+}
+
+.esquerda, .direita{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    width: 67%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+  }
+
+.redespessoais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #343232 ;
+    border-radius: 13px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.266);
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+  
+  .redespessoais img{
+    width: 75px;
+  }
+
+  .redespessoais:hover {
+    margin-top: -10px;
+  }
+
+ .direita p{
+  width: 70%;
+ }

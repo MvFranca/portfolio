@@ -1,0 +1,51 @@
+[
+    {
+        "id": "1",
+        "src": "./habilidades/html.png",
+        "conceito": "Sigla para HyperText Markup Language — Linguagem de Marcação de Hipertexto —, o HTML é o componente base da web. Isso quer dizer que ele permite a construção de websites e a inserção de novos conteúdos, como imagens e vídeos, por meio dos hipertextos."
+    },
+    {
+        "id": "2",
+        "src": "./habilidades/css.png",
+        "conceito": "css"
+    },
+    {
+        "id": "3",
+        "src": "./habilidades/js.png",
+        "conceito": "js"
+    },
+    {
+        "id": "4",
+        "src": "./habilidades/ts.png",
+        "conceito": "ts"
+    },
+    {
+        "id": "5",
+        "src": "./habilidades/react.png",
+        "conceito": "react"
+    },
+    {
+        "id": "6",
+        "src": "./habilidades/next.webp",
+        "conceito": "next"
+    },
+    {
+        "id": "7",
+        "src": "./habilidades/figma.png",
+        "conceito": "figma"
+    },
+    {
+        "id": "8",
+        "src": "./habilidades/node.png",
+        "conceito": "node"
+    },
+    {
+        "id": "9",
+        "src": "./habilidades/mongo.png",
+        "conceito": "mongo"
+    },{
+        "id": "10",
+        "src": "./habilidades/mysql.png",
+        "conceito": "mysql"
+    }
+]
