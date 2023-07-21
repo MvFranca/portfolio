@@ -29,11 +29,11 @@ const Habilidades = () => {
 
           {
             habilidades.map(hab => {
-              const {src, conceito} = hab
-              
+              const {src, conceito} = hab 
+              const Src: string = src
               return(
               <div className={styles.redespessoais} >
-                <img src={`${src}`} alt="" 
+                <img src={`${Src}`} alt="" 
                  onClick={
                   () => {
                     setConceito(conceito)
