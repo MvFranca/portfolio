@@ -7,45 +7,45 @@
     {
         "id": "2",
         "src": "./habilidades/css.png",
-        "conceito": "css"
+        "conceito": "CSS é a sigla para Cascading Style Sheets, ou seja, Folhas de Estilo em Cascatas. É uma maneira de dar estilo ao código criado por linguagens como HTML, XML ou XHTML, por exemplo. De forma prática, ela funciona como uma camada de personalização ao conteúdo visível."
     },
     {
         "id": "3",
         "src": "./habilidades/js.png",
-        "conceito": "js"
+        "conceito": "JavaScript é uma linguagem de programação usada por desenvolvedores para fazer páginas interativas da Internet. As funções de JavaScript podem melhorar a experiência do usuário durante a navegação em um site, como, por exemplo, desde a atualização do feed na página da mídia social até a exibição de animações e mapas interativos. Como uma linguagem de script do lado do cliente, ele é uma das tecnologias principais da World Wide Web. Por exemplo, ao navegar na Internet, é possível visualizar a qualquer momento um carrossel de imagens, um menu suspenso “clicar para visualizar” ou mesmo mudar dinamicamente as cores dos elementos de uma página da Web. Tudo isso graças ao JavaScript."
     },
     {
         "id": "4",
         "src": "./habilidades/ts.png",
-        "conceito": "ts"
+        "conceito": "TypeScript é um superconjunto de JavaScript, ou seja, um conjunto de ferramentas e formas mais eficientes de escrever código JavaScript, adicionando recursos que não estão presentes de maneira nativa na linguagem."
     },
     {
         "id": "5",
         "src": "./habilidades/react.png",
-        "conceito": "react"
+        "conceito": "O ReactJS é uma biblioteca JavaScript robusta usada no desenvolvimento dinâmico de aplicativos da web. Ele torna a programação em JavaScript mais simples e melhora o desempenho e o SEO do seu aplicativo, entre outros benefícios."
     },
     {
         "id": "6",
         "src": "./habilidades/next.webp",
-        "conceito": "next"
+        "conceito": "No Next.js, vimos que ele é um framework que podemos utilizar para a criação de sites simples ou até mesmo para criarmos back-end de aplicações. Ele possui algumas características, como os conceitos de server-side rendering (SSR) e static site generation (SSG)."
     },
     {
         "id": "7",
         "src": "./habilidades/figma.png",
-        "conceito": "figma"
+        "conceito": "O Figma é uma plataforma online de criação de interfaces, wireframes e protótipos. Seu papel é oferecer recursos de design de telas para aplicações variadas, permitindo que times de Design trabalhem em conjunto no mesmo projeto remotamente e simultaneamente."
     },
     {
         "id": "8",
         "src": "./habilidades/node.png",
-        "conceito": "node"
+        "conceito": "O Node é um runtime, que nada mais é do que um conjunto de códigos, API's, ou seja, são bibliotecas responsáveis pelo tempo de execução (é o que faz o seu programa rodar) que funciona como um interpretador de JavaScript fora do ambiente do navegador web."
     },
     {
         "id": "9",
         "src": "./habilidades/mongo.png",
-        "conceito": "mongo"
+        "conceito": "O Mongodb é um banco de dados, orientado por documentos, ou seja, os dados são armazenados como documentos, ao contrário de bancos de dados de modelo relacional, assim é composto por registros que não possuem uma definição formal de sua estrutura, não tendo então o conceito de colunas, chaves estrangeiras e outras formalidades."
     },{
         "id": "10",
         "src": "./habilidades/mysql.png",
-        "conceito": "mysql"
+        "conceito": "MySQL é um sistema de gerenciamento de banco de dados relacional de código aberto (RDBMS) apoiado pela Oracle e baseado em linguagem de consulta estruturada (SQL). O MySQL funciona em praticamente todas as plataformas, incluindo Linux, UNIX e Windows."
     }
 ]
