@@ -9,7 +9,7 @@ const Habilidades = () => {
   const [conceito, setConceito] = useState('Clique nos ícones ao lado para saber o que cada um significa.')
 
   async function hab(){
-    const api = await fetch('http://127.0.0.1:5173/Habilidades.json')
+    const api = await fetch('https://portfolio-mvfranca.vercel.app/Habilidades.json')
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const dados = await api.json()
     // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
