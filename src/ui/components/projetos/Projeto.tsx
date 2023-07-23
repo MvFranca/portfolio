@@ -1,4 +1,5 @@
 
+import IconGithub from '../../icons/IconGithub';
 import styles from '../../styles/projetos/Projeto.module.css'
 
 
@@ -32,6 +33,13 @@ const Projeto = ({ description, alt, src, titulo }: props) => {
                     <p>
                         {description}
                     </p>
+                </div>
+
+                <div className={styles.github}>
+                    <a href='#'>
+                        <IconGithub width={30} height={30}/>
+                        Link do repositório        
+                    </a >
                 </div>
 
             </div>

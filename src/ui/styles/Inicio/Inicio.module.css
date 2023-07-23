@@ -1,179 +1,63 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  width: 100%;
-  scroll-behavior: smooth;
-}
+
 
 #inicio {
   background: linear-gradient(-110deg, #343232 50%, #929292 50%);
   width: 100vw;
-  height: 100vh;
+  height: max-content;
+  min-height: 100vh;
   overflow: hidden;
-  scroll-behavior: smooth;
-}
-
-.container {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-@keyframes movimentacaofundo {
-  0% {
-    background: linear-gradient(-110deg, #343232 50%, #929292 50%);
-  }
-
-  20% {
-    background: linear-gradient(-110deg, #343232 50.2%, #929292 50%);
-  }
-
-  40% {
-    background: linear-gradient(-110deg, #343232 50.3%, #929292 50%);
-  }
-
-  50% {
-    background: linear-gradient(-110deg, #343232 50.4%, #929292 50%);
-  }
-
-  60% {
-    background: linear-gradient(-110deg, #343232 50.3%, #929292 50%);
-  }
-
-  80% {
-    background: linear-gradient(-110deg, #343232 50.2%, #929292 50%);
-  }
-
-  100% {
-    background: linear-gradient(-110deg, #343232 50%, #929292 50%);
-  }
-}
-
-#menu {
-  display: flex;
-  height: 90px;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  transition: all 0.24s;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color: #242323da;
-}
-
-#menu div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
 }
 
 
 
 #textos {
   text-align: initial;
-}
-
-#menu p {
-  width: 248px;
-  height: 90px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 45px;
-  line-height: 150%;
-  /* identical to box height, or 90px */
-  letter-spacing: -0.022em;
-  color: #ffffff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 50%;
 }
 
-#menu p span {
-  color: rgb(146, 146, 146);
-  transition: all 0.2s;
-}
-
-#menu nav {
-  margin-top: 10px;
-}
-
-#menu nav a {
-  text-decoration: none;
-  width: 113px;
-  height: 60px;
-
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 150%;
-  letter-spacing: -0.022em;
-  color: #ffffff;
-  /* border-bottom: 4px solid #494949; */
-  transition: all 0.24s;
-  margin-left: 60px;
-}
-
-#menu a:hover {
-  border-bottom: 3px solid rgb(158, 158, 158);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  margin-top: -10px;
-  letter-spacing: 0.03em;
+.info{
+  width: max-content;
 }
 
 #apresentacao strong {
   margin-left: 10px;
 }
 
-#tracos {
-  display: none;
-}
-
 #apresentacao {
   color: #ffffff;
   display: flex;
   justify-content: space-evenly;
-  margin-top: 170px;
+  
+  margin-top: 90px;
 }
 
 #apresentacao p {
   font-family: Arial, Helvetica, sans-serif;
-
-  font-size: 25pt;
-
+  line-height: 1.64em;
+  font-size: 2.3em;
+  letter-spacing: -0.011em;
   font-style: normal;
-}
-@keyframes digitando {
-  from {
-    width: 0;
-  }
-  to {
-    width: 16ch;
-  }
-}
+  display: flex;
+  justify-content: center;
 
-@keyframes piscando {
-  50% {
-    border-color: transparent;
-  }
+  flex-direction: column;
+  text-align: initial;
 }
 
 #nome {
   font-family: "Inter";
-  font-size: 2.2em;
+  font-size: 1.8em;
   font-weight: bold;
 
   color: #343232;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.418);
   overflow: hidden;
-  white-space: nowrap;
+ 
   transition: all 0.5s;
 }
 
@@ -182,29 +66,28 @@ body {
 }
 
 #apresentacao #lorem {
-  width: 650px;
+  width: 88%;
   font-family: "Inter";
   font-style: normal;
   font-size: 22px;
   letter-spacing: -0.011em;
   color: #ffffff;
+  margin-top: 10px;
+
 }
 
-#lorem span {
-  color: #343232;
-  text-decoration: solid;
-}
+
 
 #botoes {
   display: flex;
-  width: 600px;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: center;
+
   margin-top: 39px;
+
+  gap: 15%;
 }
 
-#github {
-  margin-left: 30px;
-}
 
 #apresentacao .redes {
   text-decoration: none;
@@ -251,51 +134,39 @@ body {
   margin-right: -60px;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 14em;
-  }
-}
-
-@keyframes blinkCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-
 #imagens {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   height: 600px;
-  width: 700px;
+  width: 50%;
+  
 }
 
 #outrasredes {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-direction: column;
   height: 400px;
   animation: flutuacao-redes 2.5s linear infinite;
   margin-left: 10px;
+  margin-top: -100px;
+  width: 50%;
+
 }
 
 @keyframes flutuacao-redes {
   0% {
-    margin-top: -25px;
+    margin-top: -100px;
   }
 
   50% {
-    margin-top: -40px;
+    margin-top: -125px;
   }
 
   100% {
-    margin-top: -25px;
+    margin-top: -100px;
   }
 }
 
@@ -385,9 +256,9 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #302c2cb5;
-  margin-left: 200px;
-  animation: rolagem 2s linear infinite;
-  margin-top: 50px;
+  box-sizing: border-box;
+  margin: 30px auto -30px auto;
+
 }
 
 .rolagem div{

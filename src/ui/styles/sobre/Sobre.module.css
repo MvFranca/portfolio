@@ -1,5 +1,5 @@
 .container{
-    height: 75vh;
+    height: max-content;
     min-height: 75vh;
     width: 100vw;
     background: linear-gradient(90deg, #343232 50%, #929292 50%);
