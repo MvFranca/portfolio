@@ -10,7 +10,7 @@
 
 }
 
-.titulo{
+.titulo, .titulo2{
     font-size: 2.3em;
     color: #454545;
     border-bottom: 3px solid #454545;
@@ -21,6 +21,10 @@
     margin: auto;
 
     bottom: 320px;
+}
+
+.titulo2{
+  display: none;
 }
 
 .conteudo{
@@ -90,5 +94,13 @@
 
     .esquerda, .direita{
      width: 100%;
+    }
+
+    .titulo{
+      display: none;
+    }
+
+    .titulo2{
+      display: flex;
     }
  }

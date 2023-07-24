@@ -1,3 +1,4 @@
+import IconMenuLine from '../../icons/IconMenu'
 import styles from '../../styles/menu/Menu.module.css'
 
 const Menu = () => {
@@ -14,11 +15,9 @@ const Menu = () => {
             <a href="#">Habilidades</a>
             <a href="#">Projetos</a>
           </nav>
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/56/56763.png"
-            alt=""
-            id={styles.tracos}
-          />
+          <div className={styles.botaoMenu}>
+            <IconMenuLine width={43} height={43} color='' id={styles.tracos}/>
+          </div>
         </div>
     )
 }

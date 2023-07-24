@@ -333,33 +333,6 @@ min-height: 100vh;
     gap: 25px;
   }
 
- nav{
-  display: none;
- }
-
- #menu{
-  display: flex;
-  height: 80px;
-  justify-content: space-around;
-  background-color: #929292a4;
-
-  }
-
-  #menu p{
-  height: 90px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-size: 40px;
-  line-height: 150%;
-  letter-spacing: -0.022em;
-  margin-left: 0;     
-  }
-
-  #tracos{
-      width: 35px;
-      display: block;
-  }
-
   #apresentacao{
       justify-content: center;
       margin-top: 45px;

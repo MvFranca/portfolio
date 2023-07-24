@@ -1,21 +1,22 @@
 .container{
-    height: 80vh;
+   height: max-content;
     width: 100vw;
     padding: 30px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: #343232;
     overflow: hidden;
 }
 
 .direita, .esquerda{
-
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 
@@ -63,7 +64,7 @@
     align-items: center;
     flex-direction: row;
     gap: 60px;
-    margin-top: 73px;
+
 }
 .titulo, .titulo2{
     width: fit-content;
@@ -74,6 +75,7 @@
     border-bottom-right-radius: 2px;
     font-family: Raisonne DemiBold, Arial;
     margin-bottom: 20px;
+    
 }
 
 .titulo2{
@@ -83,15 +85,26 @@
     margin-bottom: 10px;
 }
 
+.conteudo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: max-content;
+}
+
 .todasasRedes{
     width: max-content;
     margin-top: 50px;
+    overflow: hidden;
 }
 
 .minhasRedes{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: max-content;
 }
 
 .redes{
@@ -115,40 +128,25 @@
 }
 
 .informacoes{
+    min-width: 240px;
     width: max-content;
 }
 
-.direita footer{
-    width: max-content;
-    height: 100%;
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    flex-direction: column;
-}
 
 
-@keyframes flutuacao {
-    0% {
-      margin-top: -28px;
+@media screen and (max-width: 1000px) {
+    .esquerda, .direita{
+        width: 100%;
     }
-  
-  
-    50% {
-      margin-top: -43px;
-    }
-  
-  
-  
-    100% {
-      margin-top: -28px;
-    }
-  }
 
-.direita footer img{
-    height: 300px;
-    margin-top: -28px;
-    animation: flutuacao 2.5s linear infinite;
+    .direita{
+        margin-top: 50px;
+    }
+
+    .informacoes{
+        min-width: 240px;
+        width: 60%;
+    }
+
+   
 }

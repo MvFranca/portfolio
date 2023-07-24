@@ -6,52 +6,54 @@ import styles from "../../styles/contato/Contato.module.css";
 const Contato = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.esquerda}>
-        <h2 className={styles.titulo}>Contato</h2>
-        <form>
-          <div>
-            <label htmlFor="Nome"></label>
-            <input
-              type="text"
-              name="Nome"
-              id="nome"
-              placeholder="Digite seu nome"
-            />
-          </div>
-          <div>
-            <label htmlFor="Nome"></label>
-            <input
-              type="text"
-              name="Nome"
-              id="nome"
-              placeholder="Digite seu nome"
-            />
-          </div>
-          <div>
-            <label htmlFor="Nome"></label>
-            <input
-              type="text"
-              name="Nome"
-              id="nome"
-              placeholder="Digite seu nome"
-            />
-          </div>
-          <div>
-            <textarea
-              name="Mensagem"
-              id="mensagem"
-              placeholder="Digite sua mensagem..."
-            />
-          </div>
-          <div>
-            <button type="submit">Enviar</button>
-          </div>
-        </form>
-      </div>
+      <h2 className={styles.titulo}>Contato</h2>
 
-      <div className={styles.direita}>
+      <div className={styles.conteudo}>
 
-        <div className={styles.informacoes}>
+        <div className={styles.esquerda}>
+          <form>
+            <div>
+              <label htmlFor="Nome"></label>
+              <input
+                type="text"
+                name="Nome"
+                id="nome"
+                placeholder="Digite seu nome"
+              />
+            </div>
+            <div>
+              <label htmlFor="Email"></label>
+              <input
+                type="email"
+                name="Email"
+                id="email"
+                placeholder="Digite seu E-mail"
+              />
+            </div>
+            <div>
+              <label htmlFor="Assunto"></label>
+              <input
+                type="text"
+                name="Assunto"
+                id="assunto"
+                placeholder="Digite o assunto"
+              />
+            </div>
+            <div>
+              <textarea
+                name="Mensagem"
+                id="mensagem"
+                placeholder="Digite sua mensagem..."
+              />
+            </div>
+            <div>
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+
+        <div className={styles.direita}>
+          <div className={styles.informacoes}>
             <div>
               <h2 className={styles.titulo2}>E-mail para contato</h2>
               <p>m4rcosfranc4@gmail.com</p>
@@ -86,20 +88,13 @@ const Contato = () => {
                   />
                   <p>@marc0sfranca</p>
                 </div>
-
-                <div>
-                <p><strong>Desenvolvido por Marcos Vinicius</strong></p>
-                <p><strong>
-                    Portfólio © 2023</strong>
-                </p>
-            </div>
-
+             
               </div>
             </div>
+          </div>
         </div>
 
       </div>
-
     </div>
   );
 };

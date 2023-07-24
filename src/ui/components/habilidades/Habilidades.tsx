@@ -23,7 +23,7 @@ const Habilidades = () => {
 
   return (
     <div className={styles.container}>
-      
+      <h2 className={styles.titulo2}>Habilidades</h2>
         
 
         <div className={styles.conteudo}>
