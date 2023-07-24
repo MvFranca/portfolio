@@ -129,14 +129,17 @@
 }
 
 #minhaimagem1 {
-  height: 480px;
+  height: 450px;
+  width: 100%;
+  min-width: 450px;
+  max-width: 450px;
   animation: flutuacao 2.5s linear infinite;
   margin-right: -60px;
 }
 
 #imagens {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 600px;
   width: 50%;
@@ -299,4 +302,113 @@
   margin-top: 5px;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+@media (max-width: 1000px) {
+   
+  #inicio{
+      background: #343232;
+      height: max-content;
+  }
+
+  #textos, #imagens{
+    width: 100%;
+  }
+
+  .direita{
+    width: max-content;
+    height: max-content;
+  }
+
+  #textos{
+    margin-top: 100px;
+  }
+
+  #imagens{
+    margin-top: 0px;
+    height: 400px;
+    justify-content: center;
+  }
+
+ nav{
+  display: none;
+ }
+
+ #menu{
+  display: flex;
+  height: 80px;
+  justify-content: space-around;
+  background-color: #929292a4;
+
+  }
+
+  #menu p{
+  height: 90px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: -0.022em;
+  margin-left: 0;     
+  }
+
+  #tracos{
+      width: 35px;
+      display: block;
+  }
+
+  #apresentacao{
+      justify-content: space-evenly;
+      margin-top: 45px;
+      flex-wrap: wrap;
+  }
+
+  #apresentacao p{
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+     font-size: 30.5px;
+     letter-spacing: -0.019em;
+     font-style: normal;
+ }
+
+ #apresentacao #nome{
+  font-size: 45px;
+  color: #929292;
+ }
+
+  #lorem{
+      display: none;
+  }
+
+  div#botoes{
+      display: none;
+  }
+
+  .rolagem{
+      display: none;
+  }
+
+  #minhaimagem1{
+      height: 300px;
+      animation: teste;
+      margin-top: 0;
+      margin-left: -25px;
+   }
+   
+   #outrasredes{
+      margin-top: -10px;
+      height: max-content;
+      animation: teste;
+      justify-content: center;
+      gap: 40px;    
+      width: 20%;
+  }
+
+   .redes-pessoais{
+      
+      width: 50px;
+      height: 50px;
+      background-color: #929292;
+      transition: all 0.4s;
+  }
 }

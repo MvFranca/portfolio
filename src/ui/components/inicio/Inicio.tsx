@@ -37,12 +37,14 @@ const Inicio = () => {
           </section>
           
           <section id={styles.imagens}>
-            <div id={styles.minhaimagem1}>
-              <img
-                src="./minha-foto-com-eclipse.png"
-                alt=""
-                id={styles.minhaimagem1}
-              />
+            <div className={styles.direita}>
+              <div id={styles.minhaimagem1}>
+                <img
+                  src="./minha-foto-com-eclipse.png"
+                  alt=""
+                  id={styles.minhaimagem1}
+                />
+              </div>
             </div>
 
             <div id={styles.outrasredes}>
