@@ -16,7 +16,7 @@ const Menu = () => {
             <a href="#">Projetos</a>
           </nav>
           <div className={styles.botaoMenu}>
-            <IconMenuLine width={43} height={43} color='' id={styles.tracos}/>
+            <IconMenuLine width={43} height={43} color='#929292' id={styles.tracos}/>
           </div>
         </div>
     )

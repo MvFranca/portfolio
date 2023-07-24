@@ -3,7 +3,7 @@
     height: max-content;
     display: flex;
     flex-direction: column;
-  
+
     color: #929292;
 }
 
@@ -27,6 +27,13 @@
 @media screen and (max-width: 1000px) {
     .container{
         width: 100%;
-        margin-top: 40px;
+        padding-top: 40px;
+        color: #343232;
+        background-color: #929292;
+        
+    }
+
+    .container h2{
+        border-bottom: 3px solid #343232;
     }
 }
