@@ -2,7 +2,7 @@
     height: max-content;
     min-height: 75vh;
     width: 100vw;
-    background: linear-gradient(90deg, #343232 50%, #929292 50%);
+    background: linear-gradient(90deg, #262A2B 50%, #565D60 50%);
     overflow: hidden;
     justify-content: space-between;
     display: flex;
@@ -10,12 +10,17 @@
     flex-wrap: wrap;
 }
 
+
 .projetos{
     height: 100%;
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.projetos p{
+    color: #CCCBC9;
 }
 
 @media screen and (max-width: 1000px) {

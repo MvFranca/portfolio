@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #343232;
+    background-color: #262A2B;
     overflow: hidden;
 }
 
@@ -39,13 +39,17 @@
     width: 60%;
     min-width: 240px;
     outline: none;
-    border: 2px #343232 solid;
+    border: 2px #92928C solid;
     background-color: #3B3B3B;
     color: #fff;
     text-decoration: none;
     padding: 10px;
     margin-top: 15px;
 }
+.esquerda input::placeholder{
+    color: #92928C;
+}
+
 
 .esquerda textarea{
     height: 150px;
@@ -66,11 +70,16 @@
     gap: 60px;
 
 }
+
+.direita p{
+    color: #92928C;
+}
+
 .titulo, .titulo2{
     width: fit-content;
     font-size: 2.3em;
-    color: #454545;
-    border-bottom: 3px solid #454545;
+    color: #92928C;
+    border-bottom: 3px solid #92928C;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     font-family: Raisonne DemiBold, Arial;
@@ -110,7 +119,7 @@
 .redes{
     display: flex;
     align-items: center;
-    background-color: #929292;
+    background-color: #92928C;
     padding: 4px;
     border-radius: 5px ;
 }

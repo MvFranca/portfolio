@@ -5,7 +5,7 @@
     flex-direction: column;
     text-align: center;
     width: 100%;
-    color: #454545;
+    color: #C8C8C6;
     overflow: hidden;
     transition: all 0.5s;
     overflow: auto;
@@ -24,12 +24,14 @@
 .informacoes h3{
     font-size: 0.9rem;
     font-weight: initial;
+    color: #565D60;
 }
 
 .projetos h2{
     font-size: 1.7rem;
     padding-top: 20px;
     overflow-x: hidden;
+    color: #C8C8C6;
 }
 
 .projetos p{
@@ -63,12 +65,12 @@
 }
 
 .github{
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .github, .github a{
-    background-color: #454545;
-    color: #929292;
+    background-color: #262A2B;
+    color: #C8C8C6;
     display: flex;
     justify-content: center;
     align-items: center;

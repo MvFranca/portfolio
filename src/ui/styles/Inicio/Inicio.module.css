@@ -2,7 +2,7 @@
 
 
 #inicio {
-  background: linear-gradient(-110deg, #343232 50%, #929292 50%);
+  background: linear-gradient(-110deg, #262A2B 50%, #565D60 50%);
   width: 100vw;
   height: max-content;
 min-height: 100vh;
@@ -54,7 +54,7 @@ min-height: 100vh;
   font-size: 1.8em;
   font-weight: bold;
 
-  color: #343232;
+  color: #CECDCB;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.418);
   overflow: hidden;
  
@@ -62,7 +62,7 @@ min-height: 100vh;
 }
 
 #nome:hover {
-  color: black;
+  color: #a5a0a0;
 }
 
 #apresentacao #lorem {
