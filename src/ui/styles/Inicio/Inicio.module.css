@@ -5,7 +5,7 @@
   background: linear-gradient(-110deg, #343232 50%, #929292 50%);
   width: 100vw;
   height: max-content;
-  min-height: 100vh;
+min-height: 100vh;
   overflow: hidden;
 }
 
@@ -300,8 +300,8 @@
 .rolagem img {
   width: 20px;
   margin-top: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+
+
 }
 
 @media (max-width: 1000px) {
@@ -309,6 +309,7 @@
   #inicio{
       background: #343232;
       height: max-content;
+      min-height: auto;
   }
 
   #textos, #imagens{
@@ -328,6 +329,8 @@
     margin-top: 0px;
     height: 400px;
     justify-content: center;
+    width: 100%;
+    gap: 25px;
   }
 
  nav{
@@ -358,9 +361,11 @@
   }
 
   #apresentacao{
-      justify-content: space-evenly;
+      justify-content: center;
       margin-top: 45px;
       flex-wrap: wrap;
+      width: 100%;
+
   }
 
   #apresentacao p{
@@ -372,13 +377,10 @@
  }
 
  #apresentacao #nome{
-  font-size: 45px;
+  font-size: 1.5em;
   color: #929292;
  }
 
-  #lorem{
-      display: none;
-  }
 
   div#botoes{
       display: none;
@@ -389,14 +391,16 @@
   }
 
   #minhaimagem1{
-      height: 300px;
+      height: 350px;
+      min-width: 350px;
+      margin-left: -50px;
       animation: teste;
       margin-top: 0;
-      margin-left: -25px;
+      width: max-content;
    }
    
    #outrasredes{
-      margin-top: -10px;
+      margin-top: 0px;
       height: max-content;
       animation: teste;
       justify-content: center;
@@ -404,8 +408,8 @@
       width: 20%;
   }
 
-   .redes-pessoais{
-      
+   .redespessoais{
+  
       width: 50px;
       height: 50px;
       background-color: #929292;

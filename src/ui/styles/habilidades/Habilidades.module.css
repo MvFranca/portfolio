@@ -6,6 +6,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+
 }
 
 .titulo{
@@ -16,6 +18,18 @@
     border-bottom-right-radius: 2px;
     font-family: Raisonne DemiBold, Arial;
     margin-bottom: 20px;
+    margin: auto;
+
+    bottom: 320px;
+}
+
+.conteudo{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+  gap: 20px;
 }
 
 .esquerda, .direita{
@@ -59,4 +73,22 @@
 
  .direita p{
   width: 70%;
+ }
+
+ @media screen and (max-width: 1000px) {
+
+  .container{
+    background: none;
+    background-color: #929292;
+  }
+
+    .conteudo{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+
+    .esquerda, .direita{
+     width: 100%;
+    }
  }
