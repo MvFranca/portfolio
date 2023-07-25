@@ -9,46 +9,38 @@ const Contato = () => {
       <h2 className={styles.titulo}>Contato</h2>
 
       <div className={styles.conteudo}>
-
         <div className={styles.esquerda}>
           <form>
-            <div>
-              <label htmlFor="Nome"></label>
+            <section className={styles.formDentro}>
               <input
                 type="text"
                 name="Nome"
                 id="nome"
                 placeholder="Digite seu nome"
               />
-            </div>
-            <div>
-              <label htmlFor="Email"></label>
+
               <input
                 type="email"
                 name="Email"
                 id="email"
                 placeholder="Digite seu E-mail"
               />
-            </div>
-            <div>
-              <label htmlFor="Assunto"></label>
+
               <input
                 type="text"
                 name="Assunto"
                 id="assunto"
                 placeholder="Digite o assunto"
               />
-            </div>
-            <div>
+
               <textarea
                 name="Mensagem"
                 id="mensagem"
                 placeholder="Digite sua mensagem..."
               />
-            </div>
-            <div>
+
               <button type="submit">Enviar</button>
-            </div>
+            </section>
           </form>
         </div>
 
@@ -88,12 +80,10 @@ const Contato = () => {
                   />
                   <p>@marc0sfranca</p>
                 </div>
-             
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );

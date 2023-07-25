@@ -1,6 +1,5 @@
 import styles from "../../styles/Inicio/Inicio.module.css";
 
-import IconBxDownArrowCircle from "../../icons/IconArrowDown";
 
 const Inicio = () => {
   return (
@@ -26,13 +25,6 @@ const Inicio = () => {
                 </a>
               </div>
               
-              <div className={styles.rolagem}>
-                <div>
-                  <p>Scroll Down</p>
-                  <IconBxDownArrowCircle width={30} height={30} />
-                </div>
-
-              </div>
             </div>
           </section>
           

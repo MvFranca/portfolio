@@ -5,8 +5,11 @@
   background: linear-gradient(-110deg, #262A2B 50%, #565D60 50%);
   width: 100vw;
   height: max-content;
-min-height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -24,16 +27,17 @@ min-height: 100vh;
   width: max-content;
 }
 
-#apresentacao strong {
-  margin-left: 10px;
-}
-
 #apresentacao {
   color: #ffffff;
+  width: 95%;
   display: flex;
-  justify-content: space-evenly;
-  
+  justify-content: space-between;
+  align-items: center;
   margin-top: 90px;
+}
+
+#apresentacao strong {
+  margin-left: 10px;
 }
 
 #apresentacao p {
@@ -81,7 +85,7 @@ min-height: 100vh;
 #botoes {
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
 
   margin-top: 39px;
 
@@ -251,58 +255,6 @@ min-height: 100vh;
   height: 100vh;
 }
 
-.rolagem {
-  width: 180px;
-  height: 50px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #302c2cb5;
-  box-sizing: border-box;
-  margin: 30px auto -30px auto;
-
-}
-
-.rolagem div{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0px 10px;
-  cursor: pointer  ;
-}
-
-@keyframes rolagem {
-  0% {
-    margin-top: 50px;
-  }
-
-  50% {
-    margin-top: 60px;
-  }
-
-  100% {
-    margin-top: 50px;
-  }
-}
-
-#apresentacao .rolagem a {
-  font-family: "Inter";
-
-  text-decoration: none;
-  color: white;
-}
-
-#apresentacao .rolagem p {
-  font-size: 15pt;
-}
-
-.rolagem img {
-  width: 20px;
-  margin-top: 5px;
-
-
-}
 
 @media (max-width: 1000px) {
    
