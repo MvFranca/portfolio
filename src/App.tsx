@@ -18,7 +18,7 @@ function App() {
   }
 
   function alterarCores(){
-
+    console.log('teste')
   }
   
   return (
