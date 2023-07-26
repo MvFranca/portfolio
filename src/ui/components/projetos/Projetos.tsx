@@ -16,7 +16,7 @@ const Projetos = () => {
   
 
     async function api() {
-        const api = await fetch('http://127.0.0.1:5173/projetos/Projetos.json')
+        const api = await fetch('https://portfolio-mvfranca.vercel.app/projetos/Projetos.json')
         const dados = await api.json()
         setProjetos(dados)
       /*  await fetch('http://localhost:3000/dados/carrossel.json').then((response) => response.json()).then(setProjetos) */

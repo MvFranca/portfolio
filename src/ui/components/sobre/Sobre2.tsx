@@ -11,7 +11,7 @@ const Sobre2 = () => {
   async function hab() {
     const api = await fetch(
       //"https://portfolio-mvfranca.vercel.app/Habilidades.json"
-      "http://127.0.0.1:5173/Habilidades.json"
+      "https://portfolio-mvfranca.vercel.app/Habilidades.json"
     );
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const dados = await api.json();
