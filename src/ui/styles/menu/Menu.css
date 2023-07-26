@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&display=swap");
+
+#menuLight, #menuDark{
+  display: flex;
+  height: 90px;
+  width: 100%;
+  justify-content: center;
+
+  z-index: 99;
+
+  align-items: center;
+  transition: all 0.24s;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #ffffffee;
+  box-shadow: 0px 0px 20px 16px #0000000e;
+}
+
+#menuDark{
+  background-color: #292c2d;
+}
+
+.textosLight{
+  color: #292c2d;
+}
+
+.textosDark{
+  color: #CDC8C2;
+}
+
+.portDark{
+    
+    color: rgb(247, 245, 245);
+}
+
+.portLight {
+  color: #292c2d;
+}
+
+.portLight span{
+color: rgb(99, 98, 98);
+}
+
+.portDark span{
+  color: #CDC8C2;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.conteudo nav {
+  display: flex;
+
+  align-items: center;
+  height: 100%;
+}
+
+.conteudo p {
+  height: 100%;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 2.5em;
+  font-style: normal;
+  font-weight: 500;
+
+  line-height: 150%;
+  /* identical to box height, or 90px */
+  letter-spacing: -0.022em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo p span {
+
+  transition: all 0.2s;
+}
+
+.conteudo nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  height: 100%;
+  gap: 50px;
+}
+
+.conteudo nav div,
+.conteudo nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo nav a {
+  text-decoration: none;
+  width: max-content;
+  height: 60px;
+
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.4em;
+  font-style: normal;
+  font-weight: 500;
+  /* border-bottom: 4px solid #494949; */
+  transition: all 0.24s;
+}
+
+.conteudo a:hover {
+  color: #636262;
+}
+
+.conteudo .botaoMenu,
+#tracos {
+  display: none;
+}
+
+@media screen and (max-width: 825px) {
+  .conteudo nav {
+    display: none;
+  }
+
+  .conteudo .botaoMenu,
+  #tracos {
+    display: flex;
+  }
+
+  #tracos {
+    display: block;
+    width: 45px;
+  }
+}

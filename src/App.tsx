@@ -29,6 +29,7 @@ function App() {
        />
       <Menu
       estadoMenu = {estadoMenu}
+      darkMode = {stateDarkMode}
       />
       <SideBar
       alterarCores={alterarCores}

@@ -1,28 +1,47 @@
+import { useEffect, useState } from 'react';
 import IconMenuLine from '../../icons/IconMenu'
-import styles from '../../styles/menu/Menu.module.css'
+import  '../../styles/menu/Menu.css'
 
 type props = {
   estadoMenu: () => void;
+  darkMode: boolean;
 }
 
-const Menu = ({estadoMenu}: props) => {
+const Menu = ({estadoMenu, darkMode}: props) => {
+  const [ClassDarkMode, setIdDarkMode] = useState("menuLight");
+  const [corTextos, setCorTextos] = useState("textosLight");
+  const [corPort, setcorPort] = useState("portLight");
+
+  useEffect(() => {
+    if (darkMode) {
+      setIdDarkMode("menuDark");
+      setCorTextos("textosDark");
+      setcorPort("portDark")
+    } 
+    else {
+        setIdDarkMode("menuLight");
+        setCorTextos("textosLight")
+        setcorPort("portLight")
+    }
+  }, [darkMode]);
+
 
     return(
-        <div id={styles.menu}>
-          <div className={styles.conteudo}>
+        <div id={`${ClassDarkMode}`}>
+          <div className='conteudo'>
             <div>
-              <p>
+              <p className={`${corPort}`}>
                 Port<span>fólio</span>
               </p>
             </div>
             <nav>
-              <div><a href="#inicio">Início</a></div>
-              <div><a href="#sobre">Sobre</a></div>
-              <div><a href="#">Habilidades</a></div>
-              <div><a href="#">Projetos</a></div>
+              <div><a href="#inicio" className={corTextos}>Início</a></div>
+              <div><a href="#sobre" className={corTextos}>Sobre</a></div>
+              <div><a href="#" className={corTextos}>Habilidades</a></div>
+              <div><a href="#" className={corTextos}>Projetos</a></div>
             </nav>
-            <div className={styles.botaoMenu} onClick={estadoMenu}>
-              <IconMenuLine width={43} height={43} color='#929292' id={styles.tracos}/>
+            <div className='botaoMenu' onClick={estadoMenu}>
+              <IconMenuLine width={43} height={43} color='#929292' id='tracos'/>
             </div>
           </div>
          
