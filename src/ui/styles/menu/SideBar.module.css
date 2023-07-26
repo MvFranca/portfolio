@@ -1,8 +1,8 @@
 .container{
     position: fixed;
     left: 0;
-    top: 50%;
-    margin-top: -150px;
+    bottom: 50%;
+    margin-bottom: -150px;
     height: 300px;
     width: 60px;
     background-color: #fff;
@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden;
 }
 
 .container div{
@@ -58,12 +59,13 @@
 @media screen and (max-width: 600px){
     .container{
         display: flex;
-        margin-top: 0;
-        top: 100%;
+        bottom: 0;
+        margin-bottom: 0;
         flex-direction: row;
         height: 60px ;
-        margin-top: -60px;
+      
         width: 100%;
+        overflow: hidden;
     }
 
     
