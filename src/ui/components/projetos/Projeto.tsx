@@ -1,4 +1,3 @@
-import IconGithub from "../../icons/IconGithub";
 import styles from "../../styles/projetos/Projeto.module.css";
 
 type props = {

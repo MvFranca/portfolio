@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react'
 import styles from '../../styles/projetos/Projetos.module.css'
 
 
-import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 
 import Projeto from '../projetos/Projeto'
