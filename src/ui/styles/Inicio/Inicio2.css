@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&display=swap");
 
-.container {
+.lightMode{
   background: linear-gradient(
       to right,
       rgba(245, 245, 245, 0.658),
@@ -14,6 +14,27 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.darkMode{
+  background: linear-gradient(to right, rgba(20, 21, 22, 0.87), rgba(30, 32, 33, 0.959)), 
+    url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+  color: #e3e5e6;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.textosLight{
+  color: #292c2d;
+}
+
+.textosDark{
+  color: #bdbaba;
 }
 
 .informacoes {
@@ -34,7 +55,7 @@
   font-size: 1.2em;
 }
 
-.container h1 {
+.informacoes h1 {
   font-weight: bolder;
   font-family: "Source Sans 3", sans-serif, Arial;
   font-weight: bolder;
@@ -96,7 +117,7 @@
 
 
 @media screen and (max-width: 800px){
-  .container h1 {
+  .informacoes h1 {
     font-size: 3em;
     width: 80%;
     min-width: 330px;
@@ -125,7 +146,7 @@
 
 @media screen and (max-width: 600px){
 
-  .container{
+  .darkMode{
     margin-top: -30px;
   }
 }
@@ -133,12 +154,12 @@
 
 @media screen and (max-width: 524px){
 
-  .container{
+  .lightMode, .darkMode{
     height: 100vh;
     max-height: 700px;
   }
 
-  .container h1 {
+  .informacoes h1 {
     font-size: 2.5em;
     width: 80%;
     min-width: 330px;

@@ -34,6 +34,7 @@ function App() {
       alterarCores={alterarCores}
       />
       <Inicio2
+      darkMode = {stateDarkMode}
       />
       <Sobre2/>
       <Projetos/>

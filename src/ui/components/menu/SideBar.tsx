@@ -67,7 +67,7 @@ const SideBar = ({alterarCores}: props) => {
          <IconSound width={30} height={30} color="#292c2d"   />
       </div>
 
-      <audio id={styles.audio} autoPlay ref={som} loop>
+      <audio id={styles.audio} ref={som} loop>
           <source src="./reminder.mp3" type="audio/mpeg" />
       </audio>
     </div>

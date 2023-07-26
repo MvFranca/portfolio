@@ -1,28 +1,52 @@
-import IconArrowDownShort from '../../icons/IconArrowDown'
-import styles from '../../styles/Inicio/Inicio2.module.css'
+import IconArrowDownShort from "../../icons/IconArrowDown";
+import "../../styles/Inicio/Inicio2.css";
+import { useEffect, useState } from "react";
 
+type props = {
+  darkMode: boolean;
+};
 
-const Inicio2 = () => {
- 
+const Inicio2 = ({ darkMode }: props) => {
+  const [ClassDarkMode, setIdDarkMode] = useState("lightMode");
+  const [corTextos, setCorTextos] = useState("textosLight");
 
-    return(
-        <section className={styles.container}>
-            <div className={styles.informacoes}>
-                <h1>OLÁ, EU SOU O MARCOS VINICIUS</h1>
-                <p>
-                    Um apaixonado por tecnologia, atualmente atuando como Desenvolvedor Web Front-End,  criando e reproduzindo designs fiéis e responsivos.
-                </p>
-                <div id={styles.botoes}>
-                    <a href="#" id={styles.github}>GitHub</a>
-                    <a href="#">LinkedIn</a>
-                </div>
-            </div>
+  useEffect(() => {
+    if (darkMode) {
+      setIdDarkMode("darkMode");
+      setCorTextos("textosDark");
+    } 
+    else {
+        setIdDarkMode("lightMode");
+        setCorTextos("textosLight")
+    }
+  }, [darkMode]);
 
-            <IconArrowDownShort width={30} height={30} color='#292C2D'
-            className={styles.seta}
-          />
-        </section>
-    )
-}
+  return (
+    <section className={`${ClassDarkMode}`}>
+      <div className="informacoes">
+        <h1 className={`${corTextos}`}>
+          OLÁ, EU SOU O MARCOS VINICIUS
+        </h1>
+        <p className={`${corTextos}`}>
+          Um apaixonado por tecnologia, atualmente atuando como Desenvolvedor
+          Web Front-End, criando e reproduzindo designs fiéis e responsivos.
+        </p>
+        <div id="botoes">
+          <a href="#" id="github">
+            GitHub
+          </a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
 
-export default Inicio2
+      <IconArrowDownShort
+        width={30}
+        height={30}
+        color="#292C2D"
+        className="seta"
+      />
+    </section>
+  );
+};
+
+export default Inicio2;
