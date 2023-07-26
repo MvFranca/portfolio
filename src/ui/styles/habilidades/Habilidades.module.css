@@ -27,7 +27,7 @@
   display: none;
 }
 
-.conteudo{
+.fullHab{
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -99,7 +99,7 @@
 
 }
 
-    .conteudo{
+    .fullHab{
       display: flex;
       flex-wrap: wrap;
       flex-direction: column-reverse;

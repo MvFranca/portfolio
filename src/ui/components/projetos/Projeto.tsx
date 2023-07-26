@@ -1,49 +1,33 @@
-
-import IconGithub from '../../icons/IconGithub';
-import styles from '../../styles/projetos/Projeto.module.css'
-
+import IconGithub from "../../icons/IconGithub";
+import styles from "../../styles/projetos/Projeto.module.css";
 
 type props = {
-    alt: string;
-    src: string;
-    description: string;
-    tecnologias: string;
-    titulo: string;
-    fecharTec: () => void;
-    stateTec: boolean;
-}
+  alt: string;
+  src: string;
+  description: string;
+  tecnologias: string;
+  titulo: string;
+  fecharTec: () => void;
+  stateTec: boolean;
+};
 
+const Projeto = ({ description, src, titulo }: props) => {
+  return (
+    <div className={styles.container}>
+      <div className={styles.conteudo}>
+        <div className={styles.imagem}>
+          <img src={src} alt="" />
+        </div>
+        <section>
+          <h3>{titulo}</h3>
+          <p>{description}</p>
+          <a href="#" className={styles.github}>
+            GITHUB
+          </a>
+        </section>
+      </div>
+    </div>
+  );
+};
 
-
-const Projeto = ({ description, alt, src, titulo }: props) => {
-
-  
-    return (
-            <div className={styles.projetos}>
-
-                <div className={styles.imagem}>
-                    <img src={src} alt={alt} />
-                </div>
-
-                <div className={styles.informacoes}>
-
-                    <h2>
-                        {titulo}
-                    </h2>
-                    <p>
-                        {description}
-                    </p>
-                </div>
-
-                <div className={styles.github}>
-                    <a href='#'>
-                        <IconGithub width={30} height={30}/>
-                        Link do repositório        
-                    </a >
-                </div>
-
-            </div>
-    )
-}
-
-export default Projeto
+export default Projeto;

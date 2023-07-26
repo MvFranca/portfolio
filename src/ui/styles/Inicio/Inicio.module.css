@@ -2,7 +2,7 @@
 
 
 #inicio {
-  background: linear-gradient(-110deg, #262A2B 50%, #565D60 50%);
+  background-color: #262A2B;
   width: 100vw;
   height: max-content;
   min-height: 100vh;
@@ -29,11 +29,11 @@
 
 #apresentacao {
   color: #ffffff;
-  width: 95%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 90px;
+  margin-top: 20px;
 }
 
 #apresentacao strong {
@@ -42,61 +42,53 @@
 
 #apresentacao p {
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.64em;
+ 
   font-size: 2.3em;
   letter-spacing: -0.011em;
   font-style: normal;
   display: flex;
   justify-content: center;
-
+  width: 100%;
   flex-direction: column;
   text-align: initial;
 }
 
 #nome {
-  font-family: "Inter";
-  font-size: 1.8em;
-  font-weight: bold;
-
-  color: #CECDCB;
+  font-size: 4em;
+  width: 100%;
+  color: #a5a0a0;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.418);
   overflow: hidden;
- 
   transition: all 0.5s;
 }
 
 #nome:hover {
-  color: #a5a0a0;
+  color: #7a7777;
 }
 
 #apresentacao #lorem {
-  width: 88%;
+  width: 100%;
   font-family: "Inter";
   font-style: normal;
   font-size: 22px;
-  letter-spacing: -0.011em;
+
   color: #ffffff;
   margin-top: 10px;
 
 }
 
-
-
 #botoes {
   display: flex;
   width: 100%;
-  justify-content: space-between;
-
   margin-top: 39px;
-
-  gap: 15%;
+  gap: 10%;
 }
 
 
 #apresentacao .redes {
   text-decoration: none;
   color: white;
-  background-color: #232323;
+  background-color: #565D60;
   width: 190px;
   height: 60px;
   display: flex;
@@ -105,7 +97,8 @@
   font-family: "Inter";
   font-size: 22pt;
   transition: all 0.2s;
-  border-radius: 10px;
+  font-weight: bold;
+  border-radius: 13px;
   box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.223);
 }
 
@@ -133,12 +126,12 @@
 }
 
 #minhaimagem1 {
-  height: 450px;
-  width: 100%;
-  min-width: 450px;
-  max-width: 450px;
-  animation: flutuacao 2.5s linear infinite;
+  
+  width: 105%;
+  margin-top: -40px;
   margin-right: -60px;
+  /*animation: flutuacao 2.5s linear infinite;*/
+  
 }
 
 #imagens {
@@ -156,9 +149,9 @@
   align-items: center;
   flex-direction: column;
   height: 400px;
-  animation: flutuacao-redes 2.5s linear infinite;
+  /*animation: flutuacao-redes 2.5s linear infinite;*/
   margin-left: 10px;
-  margin-top: -100px;
+  
   width: 50%;
 
 }
@@ -183,7 +176,7 @@
   justify-content: center;
   width: 60px;
   height: 60px;
-  background-color: #929292;
+  background-color: #565D60;
   border-radius: 13px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.266);
   transition: all 0.4s;
@@ -191,6 +184,7 @@
 
 .redespessoais:hover {
   margin-left: -10px;
+    background: linear-gradient(#36aee0, #1c96d1);
 }
 
 .twitter {
@@ -199,10 +193,9 @@
 }
 
 .twitter:hover {
-  background: linear-gradient(#36aee0, #1c96d1);
+
   padding: 14.2px 10px;
   border-radius: 13px;
-  box-shadow: 4px 0px 5px rgba(0, 0, 0, 0.505);
 }
 
 .instagram {
@@ -337,7 +330,7 @@
   
       width: 50px;
       height: 50px;
-      background-color: #929292;
+      background-color: #565D60;
       transition: all 0.4s;
   }
 }

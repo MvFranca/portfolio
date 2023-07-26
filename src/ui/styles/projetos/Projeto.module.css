@@ -1,84 +1,66 @@
-.projetos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    color: #C8C8C6;
-    overflow: hidden;
-    transition: all 0.5s;
-    overflow: auto;
-}
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&display=swap");
 
 .container{
-    overflow: hidden;
-    width: 200px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
 }
 
-.informacoes{
+.conteudo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.conteudo .imagem{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo .imagem img{
     width: 80%;
 }
 
-.informacoes h3{
-    font-size: 0.9rem;
-    font-weight: initial;
-    color: #565D60;
-}
-
-.projetos h2{
-    font-size: 1.7rem;
-    padding-top: 20px;
-    overflow-x: hidden;
-    color: #C8C8C6;
-}
-
-.projetos p{
-    margin-top: 10px;
-       
-    font-size: 0.75rem;
-    padding: 0px 10px;
-    text-align: center;
-}
-
-
-
-.informacoes p{
-    text-align: center;
-    height: 30%;
-  
-}
-
-.imagem img{
-    border-radius: 3px;
-
-}
-
-.imagem{
+.conteudo section{
+    width: 40%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 75%;
-
-}
-
-.github{
-    margin-top: 15px;
-}
-
-.github, .github a{
-    background-color: #262A2B;
-    color: #C8C8C6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: max-content;
-    height: max-content;
-    padding:3px 5px;
-    gap: 10px;
-    border-radius: 25px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    text-align: initial;
+    flex-wrap: wrap;
 }
 
 
+.conteudo section h3{
+    font-family: "Source Sans 3", sans-serif, Arial;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+.conteudo section a{
+    font-family: "Source Sans 3", sans-serif, Arial;
+    font-size: 1.3em;
+    background-color: #292C2D;
+    max-width: max-content;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin-top: 25px;
+    transition: 0.2s all;
+    box-shadow: 0px 2px 4px #00000065;
+    box-sizing: border-box;
+}
+
+.conteudo section a:hover{
+    background-color: #4b4e4e;
+}

@@ -1,5 +1,5 @@
 .rodape{
-    background-color: #262A2B;
+    background-color: #292c2d;
     padding: 20px 0px;
     width: 100%;
     height: max-content;
@@ -11,7 +11,7 @@
 }
 
 .rodape p{
-    color: #92928C;
+    color: #ffffff;
 }
 
 @media screen and (max-width: 500px)  {

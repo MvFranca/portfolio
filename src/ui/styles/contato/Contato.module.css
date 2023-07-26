@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&display=swap");
+
+
 .container{
    height: max-content;
     width: 100vw;
@@ -6,8 +9,26 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #262A2B;
+    background: linear-gradient(
+        to right,
+        rgba(245, 245, 245, 0.658),
+        rgba(245, 245, 245, 0.658)
+      ),
+      url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
     overflow: hidden;
+}
+
+.tudo{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tudo p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
 }
 
 .direita, .esquerda{
@@ -41,24 +62,25 @@
 
 .esquerda input, .esquerda textarea, .esquerda button{
     box-sizing: border-box;
-    width: 70%;
+    width: 80%;
     min-width: 240px;
     outline: none;
-    border: 2px #92928C solid;
-    background-color: #3B3B3B;
-    color: #fff;
+    border: none;
+    background-color: #292c2d;
+    color: #feffff;
     text-decoration: none;
     margin-top: 15px;
-    padding: 10px;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 .esquerda textarea::placeholder{
-    color: #92928C;
+    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .esquerda input::placeholder{
-    color: #92928C;
+    color: #feffff;
 }
 
 
@@ -79,18 +101,15 @@
 }
 
 .direita p{
-    color: #92928C;
+    color: #292c2d;
 }
 
 .titulo, .titulo2{
     width: fit-content;
     font-size: 2.3em;
-    color: #92928C;
-    border-bottom: 3px solid #92928C;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    font-family: Raisonne DemiBold, Arial;
-    margin-bottom: 20px;
+    color: #292c2d;
+
+    font-family: "Source Sans 3", sans-serif, Arial;
     
 }
 
@@ -109,6 +128,7 @@
     flex-wrap: wrap;
     height: max-content;
     margin-top: 15px;
+   
 }
 
 .todasasRedes{
@@ -127,7 +147,7 @@
 .redes{
     display: flex;
     align-items: center;
-    background-color: #92928C;
+    background-color: #292c2d;
     padding: 4px;
     border-radius: 5px ;
 }
@@ -147,6 +167,9 @@
 
 .formDentro, .formDentro div{
     width: 100%;
+}
+.formDentro form{
+    background-color: #fff;
 }
 
 @media screen and (max-width: 1000px) {

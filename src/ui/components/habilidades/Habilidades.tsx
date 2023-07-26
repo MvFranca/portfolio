@@ -9,7 +9,7 @@ const Habilidades = () => {
 
   async function hab() {
     const api = await fetch(
-      "https://portfolio-mvfranca.vercel.app/Habilidades.json"
+    'http://127.0.0.1:5173/Habilidades.json'
     );
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const dados = await api.json();
@@ -24,24 +24,22 @@ const Habilidades = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.titulo2}>Habilidades</h2>
-        
 
-        <div className={styles.conteudo}>
-          
-          <div className={styles.esquerda}>
+      <div className={styles.fullHab}>
+        <div className={styles.esquerda}>
           <h2 className={styles.titulo}>Habilidades</h2>
           <div className={styles.habilidades}>
             {habilidades.map((hab) => {
               const { src, conceito } = hab;
               const Src: string = src;
               return (
-                <div className={styles.redespessoais}  onClick={() => {
-                  setConceito(conceito);
-                }}>
-                  <img
-                    src={`${Src}`}
-                    alt="" 
-                  />
+                <div
+                  className={styles.redespessoais}
+                  onClick={() => {
+                    setConceito(conceito);
+                  }}
+                >
+                  <img src={`${Src}`} alt="" />
                 </div>
               );
             })}

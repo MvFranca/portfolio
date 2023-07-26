@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&display=swap");
+
+.container {
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.658),
+      rgba(245, 245, 245, 0.658)
+    ),
+    url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+  color: #292c2d;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.informacoes {
+  height: max-content;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 90px;
+}
+
+.informacoes p {
+  margin: auto;
+  width: 60%;
+  min-width: 240px;
+  font-size: 1.2em;
+}
+
+.container h1 {
+  color: #292c2d;
+  font-weight: bolder;
+  font-family: "Source Sans 3", sans-serif, Arial;
+  font-weight: bolder;
+  font-size: 3.8em;
+  text-shadow: 2px 2px 4px #00000046;
+  box-sizing: border-box;
+}
+
+#botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "Source Sans 3", sans-serif, Arial;
+  gap: 10%;
+  box-sizing: border-box;
+}
+
+#botoes a {
+  background-color: #292c2d;
+  color: #fff;
+  padding: 15px 65px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.3em;
+  transition: 0.2s all;
+  box-shadow: 0px 2px 4px #00000065;
+}
+
+#botoes a:hover {
+  margin-top: -10px;
+}
+
+.seta {
+  position: absolute;
+  bottom: 25px;
+  cursor: pointer;
+  animation: descer 1.5s linear infinite;
+  transition: 0.2s all;
+}
+
+.seta:hover {
+  color: #929292;
+}
+
+@keyframes descer {
+  0% {
+    bottom: 25px;
+  }
+
+  50% {
+    bottom: 45px;
+  }
+
+  100% {
+    bottom: 25px;
+  }
+}
+
+
+@media screen and (max-width: 800px){
+  .container h1 {
+    font-size: 3em;
+    width: 80%;
+    min-width: 330px;
+  }
+
+  .informacoes p {
+    min-width: 330px;
+    font-size: 1.1em;
+  }
+
+  #botoes {
+    width: 80%;
+    min-width: 330px;
+    flex-wrap: wrap;
+  }
+
+  #botoes a {
+    padding: 10px 40px;
+    font-size: 1.3em;
+  }
+  
+  .seta {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 524px){
+
+  .container{
+    height: 100vh;
+    max-height: 700px;
+  }
+
+  .container h1 {
+    font-size: 2.5em;
+    width: 80%;
+    min-width: 330px;
+  }
+
+  .informacoes p {
+    min-width: 330px;
+    font-size: 1em;
+  }
+
+  #github{
+    display: none;
+  }
+
+  #botoes a {
+    padding: 10px 60px;
+    font-size: 1.3em;
+  }
+}

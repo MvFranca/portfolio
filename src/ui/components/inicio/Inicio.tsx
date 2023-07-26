@@ -9,11 +9,16 @@ const Inicio = () => {
           <section id={styles.textos}>
             <div className={styles.info}>
               <div>
+                <h1 id={styles.nome}>
+                  Marcos Vinicius
+                </h1>
                 <p>
-                  <span>Olá, meu nome é</span>
-                  <span id={styles.nome}>Marcos Vinicius.</span>
-                  <span>Desenvolvedor<strong>Front-end</strong></span>
+                  Desenvolvedor Front-End
                 </p>
+                  <span id={styles.lorem}>
+                    Crio e reproduzo designs fiéis e responsivos de acordo  <br />com o que a modernidade pede.
+                  </span>
+                
               </div>
 
               <div id={styles.botoes}>
@@ -32,7 +37,7 @@ const Inicio = () => {
             <div className={styles.direita}>
               <div id={styles.minhaimagem1}>
                 <img
-                  src="./minha-foto-com-eclipse.png"
+                  src="./eu-web.png"
                   alt=""
                   id={styles.minhaimagem1}
                 />

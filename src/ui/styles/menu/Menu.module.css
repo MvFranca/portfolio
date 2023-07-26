@@ -1,18 +1,32 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&display=swap');
+
+
 #menu {
     display: flex;
     height: 90px;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+
+    z-index: 99; 
     
     align-items: center;
     transition: all 0.24s;
     position: fixed;
     left: 0;
     top: 0;
-    background-color: #212425ee;
+    background-color: #ffffffee;
+   box-shadow: 0px 0px 20px 16px #0000000e;
+    
   }
   
+  .conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+
   #menu div {
     display: flex;
     
@@ -24,70 +38,67 @@
   #menu p {
     
     height: 100%;
-    font-family: "Inter";
-    font-style: normal;
+    font-family: 'Source Sans 3', sans-serif;
+     font-size: 2.5em;
+     font-style: normal;
     font-weight: 500;
-    font-size: 45px;
+   
     line-height: 150%;
     /* identical to box height, or 90px */
     letter-spacing: -0.022em;
-    color: #ffffff;
+    color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 100px;
+
   }
   
   #menu p span {
-    color: rgb(146, 146, 146);
+    color: rgb(99, 98, 98);
     transition: all 0.2s;
   }
   
   #menu nav {
-    margin-top: 10px;
-    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: 100%;
+    gap: 50px;
   }
   
-  #menu nav a {
-    text-decoration: none;
-   
-    height: 60px;
-  
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
+  #menu nav div,  #menu nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
 
-    color: #ffffff;
+  #menu nav a {
+    text-decoration: none;
+    width: max-content;
+    height: 60px;
+  
+    font-family: 'Source Sans 3', sans-serif;
+     font-size: 1.4em;
+    font-style: normal;
+    font-weight: 500;
+    color: #292C2D;
     /* border-bottom: 4px solid #494949; */
     transition: all 0.24s;
-    margin-left: 60px;
   }
   
   #menu a:hover {
-    border-bottom: 3px solid rgb(158, 158, 158);
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    margin-top: -10px;
-
+    color: #636262;
   }
 
   #menu .botaoMenu, #tracos {
     display: none;
   }
 
-  @media screen and (max-width: 1000px){
+  @media screen and (max-width: 825px){
 
-    #menu {
-      justify-content: space-between;
-      
-      overflow: hidden;
-    }
 
-    #menu p{
-      margin-left: 30px;
-    }
 
     #menu nav{
       display: none;
@@ -100,6 +111,6 @@
     #tracos{
       display: block;
       width: 45px;
-      margin-right: 30px;
+   
     }
   }

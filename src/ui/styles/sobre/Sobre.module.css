@@ -8,6 +8,8 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    border-top: 2px solid #929292;
+    border-bottom: 2px solid #929292;
 }
 
 
