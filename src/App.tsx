@@ -12,13 +12,14 @@ import Projetos from './ui/components/projetos/Projetos'
 
 function App() {
   const [stateMenu, setStateMenu] = useState(false)
+  const[stateDarkMode, setStateDarkMode] = useState(false)
 
   function estadoMenu(){
     setStateMenu(!stateMenu)
   }
 
   function alterarCores(){
-    console.log('teste')
+    setStateDarkMode(!stateDarkMode)
   }
   
   return (
@@ -32,7 +33,9 @@ function App() {
       <SideBar
       alterarCores={alterarCores}
       />
-      <Inicio2/>
+      <Inicio2
+      darkMode = {stateDarkMode}
+      />
       <Sobre2/>
       <Projetos/>
       <Contato/>

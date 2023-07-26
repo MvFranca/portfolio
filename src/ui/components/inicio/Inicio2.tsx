@@ -1,7 +1,20 @@
 import IconArrowDownShort from '../../icons/IconArrowDown'
 import styles from '../../styles/Inicio/Inicio2.module.css'
+import {useEffect, useState} from 'react'
 
-const Inicio2 = () => {
+type props = {
+    darkMode: boolean;
+}
+
+const Inicio2 = ({darkMode}: props) => {
+    const [IdDarkMode, setIdDarkMode] = useState()
+
+    useEffect(() => {
+        if(darkMode){
+
+        }
+    }, [darkMode])
+
     return(
         <section className={styles.container}>
             <div className={styles.informacoes}>
