@@ -16,6 +16,10 @@ function App() {
   function estadoMenu(){
     setStateMenu(!stateMenu)
   }
+
+  function alterarCores(){
+
+  }
   
   return (
     <>
@@ -25,7 +29,9 @@ function App() {
       <Menu
       estadoMenu = {estadoMenu}
       />
-      <SideBar/>
+      <SideBar
+      alterarCores={alterarCores}
+      />
       <Inicio2/>
       <Sobre2/>
       <Projetos/>

@@ -14,18 +14,50 @@
 }
 
 .container div{
-    width: 100%;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s all;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.container div:hover{
+  
+    background-color: #00000041;
+    
+}
+
+
+#audio{
+    margin-left: 400px;
+    display: none;
+}
+
+#somOff{
+    display: none;
+}
+
+.botoesSom{
+    height: max-content;
+    width: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container img{
-    width: 100%;
+@media screen and (max-width: 1000px){
+    .container{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px){
     .container{
+        display: flex;
         margin-top: 0;
         top: 100%;
         flex-direction: row;
@@ -33,4 +65,6 @@
         margin-top: -60px;
         width: 100%;
     }
+
+    
 }

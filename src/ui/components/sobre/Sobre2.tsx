@@ -1,5 +1,5 @@
 import styles from "../../styles/sobre/Sobre2.module.css";
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from "react";
 
 const Sobre2 = () => {
   const [habilidades, setHabilidades] = useState([]);
@@ -11,14 +11,14 @@ const Sobre2 = () => {
   async function hab() {
     const api = await fetch(
       //"https://portfolio-mvfranca.vercel.app/Habilidades.json"
-      'http://127.0.0.1:5173/Habilidades.json'
+      "http://127.0.0.1:5173/Habilidades.json"
     );
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const dados = await api.json();
     // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
     setHabilidades(dados);
   }
-  
+
   useEffect(() => {
     void hab();
   }, []);
@@ -40,44 +40,44 @@ const Sobre2 = () => {
               Meu nome é <strong>Marcos Vinicius</strong>, tenho 19 anos e sou
               um apaixonado por tecnologia. Estudo{" "}
               <strong>Desenvolvimento Web</strong> há quase{" "}
-              <strong>2 anos</strong>, o que me permitiu ter contato com
-              várias tecnologias e
-              práticas utilizadas no mercado.
+              <strong>2 anos</strong>, o que me permitiu ter contato com várias
+              tecnologias e práticas utilizadas no mercado.
               <br />
               Atualmente, estou realizando o curso{" "}
               <strong>Bacharelado em Sistemas de Informação</strong>, no
               Instituto Federal de Alagoas, e meu foco tem sido se tornar um
               <strong> Desenvolvedor Fullstack</strong>.
               <br />
-              <strong>Me relaciono facilmente</strong> com outras pessoas pessoas, além de
-              <strong> aprender rapidamente</strong> conteúdos que se façam necessários.
+              <strong>Me relaciono facilmente</strong> com outras pessoas
+              pessoas, além de
+              <strong> aprender rapidamente</strong> conteúdos que se façam
+              necessários.
             </p>
             <a href="#">CONTATO</a>
           </div>
 
           <div className={styles.imagem}>
-          <h3>Minhas Habilidades</h3>
-          <div className={styles.tecnologias}>
-          {habilidades.map((hab) => {
-              const { src, conceito } = hab;
-              const Src: string = src;
-              return (
-              <div className={styles.tecnologia}
-              onClick={() => {
-                setConceito(conceito);
-              }}
-              >
-                  <img src={Src} alt='' />
+            <h3>Minhas Habilidades</h3>
+            <div className={styles.tecedescricao}>
+              <div className={styles.tecnologias}>
+                {habilidades.map((hab) => {
+                  const { src, conceito } = hab;
+                  const Src: string = src;
+                  return (
+                    <div
+                      className={styles.tecnologia}
+                      onClick={() => {
+                        setConceito(conceito);
+                      }}
+                    >
+                      <img src={Src} alt="" />
+                    </div>
+                  );
+                })}
               </div>
-            );
-            })}
-          </div>
-
-          <p className={styles.conceito}>
-            {conceito}
-          </p>
-
-          </div>
+              <p className={styles.conceito}>{conceito}</p>
+                        </div>
+            </div>
         </section>
       </div>
     </div>

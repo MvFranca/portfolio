@@ -10,18 +10,16 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: rgb(255, 255, 255);
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #b3b3b3;
 }
 
 
-h1 {
-  font-size: 3.2em;
-  color: #c8b59a;
-  line-height: 1.1;
+h1, p {
+  color: #292C2D;
 }
 
 

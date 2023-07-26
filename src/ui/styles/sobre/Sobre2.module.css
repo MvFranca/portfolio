@@ -32,15 +32,15 @@
   font-size: 2.5em;
 }
 
-.titulo p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.titulo p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .conteudo section {
   width: 100%;
   display: flex;
   justify-content: space-between;
- 
+
   flex-wrap: wrap;
 }
 
@@ -78,12 +78,11 @@ h3 {
   width: max-content;
 }
 
-
-.imagem{
+.imagem {
   justify-content: initial;
 }
 
-.tecnologias{
+.tecnologias {
   width: 100%;
   display: flex;
   justify-content: initial;
@@ -93,7 +92,7 @@ h3 {
   gap: 20px;
 }
 
-.tecnologia{
+.tecnologia {
   background-color: #292c2d;
   width: 70px;
   height: 70px;
@@ -105,17 +104,75 @@ h3 {
   cursor: pointer;
 }
 
-.tecnologia:hover{
+.tecnologia:hover {
   background-color: rgb(82, 79, 79);
 }
 
-.tecnologia img{
+.tecnologia img {
   width: 68%;
 }
 
-.conceito{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.conceito {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
   margin-top: 30px;
   text-align: initial;
+}
+
+@media screen and (max-width: 1000px) {
+  .informacoes,
+  .imagem {
+    width: 100%;
+  }
+
+  .tecnologia {
+    width: 90px;
+    height: 90px;
+   }
+
+  
+  .informacoes a {
+    padding: 10px 35px;
+    font-size: 1.3em;
+    margin: auto;
+  }
+  
+.imagem {
+    margin-top: 100px;
+  }
+
+  .conceito{
+    text-align: center;
+  }
+
+  .informacoes p {
+    text-align: center;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+.imagem h3{
+  margin-bottom: 0;
+}
+
+h3{
+  text-align: center;
+}
+
+.tecnologias {
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 30px;
+}
+.tecnologia {
+ width: 100px;
+ height: 100px;
+}
+.tecedescricao{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
 }

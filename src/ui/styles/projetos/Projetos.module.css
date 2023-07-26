@@ -37,3 +37,8 @@
    
 }
 
+@media screen and (max-width: 1000px) {
+    .conteudo{
+        gap: 50px;
+    }
+}

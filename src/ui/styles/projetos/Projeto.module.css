@@ -13,6 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -63,4 +64,29 @@
 
 .conteudo section a:hover{
     background-color: #4b4e4e;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .container{
+        margin-bottom: 30px;
+    }
+
+    .conteudo .imagem{
+        width: 50%;
+        min-width: 300px;
+    }
+
+    .conteudo section{
+        width: 80%;
+        text-align: center;
+    }
+
+    .conteudo section a{
+        margin: 20px auto;
+    }
+
+    .conteudo{
+        flex-direction: column;
+    }
 }
