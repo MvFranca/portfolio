@@ -146,7 +146,7 @@
 
 @media screen and (max-width: 600px){
 
-  .darkMode{
+  .darkMode, .lightMode{
     margin-top: -30px;
   }
 }
