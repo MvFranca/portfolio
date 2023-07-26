@@ -26,6 +26,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #292C2D;
 }
 
 .titulo h2 {
@@ -34,6 +35,7 @@
 
 .titulo p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #292C2D;
 }
 
 .conteudo section {
@@ -53,10 +55,11 @@
   min-height: 70%;
 }
 
-h3 {
+.imagem h3 {
   font-size: 1.8em;
   text-align: initial;
   margin-bottom: 25px;
+  color: #292C2D;
 }
 
 .informacoes p {
@@ -64,6 +67,7 @@ h3 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 34px;
   font-size: 1.2em;
+  color: #292C2D;
 }
 
 .informacoes a {
