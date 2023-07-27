@@ -1,24 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&display=swap");
 
-#fullProjects{
+
+#lightProjects, #darkProjects{
     height: max-content;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: auto;
-    background-color: rgb(248, 248, 247);
     padding-top: 30px;
 }
 
+#darkProjects{
+    background-color: #3E3F40;
+}
+
+#lightProjects{
+    background-color: rgb(248, 248, 247);
+}
+
+
+
 .titulo{
     font-size: 2.5em;
-    color: #292C2D;
     font-family: "Source Sans 3", sans-serif, Arial;
 
 }
 
-.conteudo{
+.conteudo2{
     width: 90%;
     height: max-content;
     display: flex;
@@ -38,7 +47,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .conteudo{
+    .conteudo2{
         gap: 50px;
     }
 }

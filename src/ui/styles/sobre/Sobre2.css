@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&display=swap");
 
-.container {
+
+.sobreDark, .sobreLight{
   height: max-content;
   width: 100%;
-  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,24 @@
   box-sizing: border-box;
 }
 
-.conteudo {
+.sobreDark{
+    background-color: #505152;
+}
+
+.sobreDark .titulo2 h2, .sobreDark p, .sobreDark h3{
+  color: #CDC8C2;
+}
+
+.sobreDark .informacoes2 a{
+  background-color: #8A8987;
+  color: #292C2D;
+}
+
+.sobreLight{
+  background-color: #ffffff;
+}
+
+.conteudo4 {
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -21,33 +38,32 @@
   gap: 50px;
 }
 
-.titulo {
+.titulo2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #292C2D;
+
 }
 
-.titulo h2 {
+.titulo2 h2 {
   font-size: 2.5em;
 }
 
-.titulo p {
+.titulo2 p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #292C2D;
 }
 
-.conteudo section {
+.conteudo4 section {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
   flex-wrap: wrap;
 }
 
-.informacoes,
-.imagem {
+.informacoes2,
+.imagem1 {
   width: 40%;
   display: flex;
   justify-content: center;
@@ -57,22 +73,22 @@
 
 
 
-.container section h3 {
+.sobreDark section h3, .sobreLight section h3 {
   font-size: 1.8em;
   text-align: initial;
   margin-bottom: 25px;
-  color: #292C2D;
+
 }
 
-.informacoes p {
+.informacoes2 p {
   text-align: initial;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 34px;
   font-size: 1.2em;
-  color: #292C2D;
+
 }
 
-.informacoes a {
+.sobreDark a, .sobreLight a {
   background-color: #292c2d;
   color: #fff;
   padding: 6px 25px;
@@ -84,7 +100,7 @@
   width: max-content;
 }
 
-.imagem {
+.imagem1 {
   justify-content: initial;
 }
 
@@ -126,8 +142,8 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .informacoes,
-  .imagem {
+  .informacoes2,
+  .imagem1 {
     width: 100%;
   }
 
@@ -137,34 +153,34 @@
    }
 
   
-  .informacoes a {
+  .informacoes2 a {
     padding: 10px 35px;
     font-size: 1.3em;
     margin: auto;
   }
   
-.imagem {
+.imagem1 {
     margin-top: 100px;
   }
 
   .conceito{
-    text-align: center;
+    text-align: initial;
   }
 
-  .informacoes p {
-    text-align: center;
+  .informacoes2 p {
+    text-align: initial;
     font-size: 1em;
   }
 }
 
 @media screen and (max-width: 700px) {
-.imagem h3{
+.imagem1 h3{
   margin-bottom: 0;
 }
 
 .container section h3 {
   font-size: 1.8em;
-  text-align: center;
+  text-align: initial;
   margin-bottom: 25px;
   color: #292C2D;
 }
@@ -182,6 +198,6 @@
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
-  align-items: center;
+  align-items: initial;
 }
 }

@@ -46,21 +46,20 @@ color: rgb(99, 98, 98);
   color: #CDC8C2;
 }
 
-.conteudo {
+.conteudo1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90%;
 }
 
-.conteudo nav {
+.conteudo1 nav {
   display: flex;
-
   align-items: center;
   height: 100%;
 }
 
-.conteudo p {
+.conteudo1 p {
   height: 100%;
   font-family: "Source Sans 3", sans-serif;
   font-size: 2.5em;
@@ -75,12 +74,12 @@ color: rgb(99, 98, 98);
   align-items: center;
 }
 
-.conteudo p span {
+.conteudo1 p span {
 
   transition: all 0.2s;
 }
 
-.conteudo nav {
+.conteudo1 nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,14 +88,14 @@ color: rgb(99, 98, 98);
   gap: 50px;
 }
 
-.conteudo nav div,
-.conteudo nav a {
+.conteudo1 nav div,
+.conteudo1 nav a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.conteudo nav a {
+.conteudo1 nav a {
   text-decoration: none;
   width: max-content;
   height: 60px;
@@ -109,21 +108,21 @@ color: rgb(99, 98, 98);
   transition: all 0.24s;
 }
 
-.conteudo a:hover {
+.conteudo1 a:hover {
   color: #636262;
 }
 
-.conteudo .botaoMenu,
+.conteudo1 .botaoMenu,
 #tracos {
   display: none;
 }
 
 @media screen and (max-width: 825px) {
-  .conteudo nav {
+  .conteudo1 nav {
     display: none;
   }
 
-  .conteudo .botaoMenu,
+  .conteudo1 .botaoMenu,
   #tracos {
     display: flex;
   }

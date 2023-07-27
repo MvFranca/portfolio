@@ -73,8 +73,8 @@ const SideBar = ({alterarCores, darkMode}: props) => {
         <IconBxlTelegram width={33} height={33} color="#292c2d"/>
       </div>
 
-      <div ref={light}>
-        <IconSun width={30} height={30} color="#292c2d" onClick={alterarCores}/>
+      <div ref={light} onClick={alterarCores}>
+        <IconSun width={30} height={30} color="#292c2d" />
       </div>
 
       <div ref={dark} onClick={alterarCores}>

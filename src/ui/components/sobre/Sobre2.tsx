@@ -1,16 +1,19 @@
-import styles from "../../styles/sobre/Sobre2.module.css";
+import "../../styles/sobre/Sobre2.css";
 import { useState, useEffect } from "react";
 
-const Sobre2 = () => {
-  const [habilidades, setHabilidades] = useState([]);
+type props = {
+  darkMode: boolean;
+};
 
+const Sobre2 = ({ darkMode }: props) => {
+  const [habilidades, setHabilidades] = useState([]);
   const [conceito, setConceito] = useState(
     "Clique nos ícones para saber o que cada um significa."
   );
 
+ 
   async function hab() {
     const api = await fetch(
-      //"https://portfolio-mvfranca.vercel.app/Habilidades.json"
       "https://portfolio-mvfranca.vercel.app/Habilidades.json"
     );
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
@@ -23,10 +26,17 @@ const Sobre2 = () => {
     void hab();
   }, []);
 
+  const [sobreDark, setSobreDark] = useState("sobreLight")
+
+  useEffect(()=> {
+    if(darkMode) setSobreDark("sobreDark")
+    else setSobreDark("sobreLight")
+}, [darkMode])
+
   return (
-    <div className={styles.container}>
-      <div className={styles.conteudo}>
-        <div className={styles.titulo}>
+    <div className={`${sobreDark}`}>
+      <div className="conteudo4">
+        <div className="titulo2">
           <h2>SOBRE MIM</h2>
           <p>
             Aqui você descobrirá um pouco mais sobre quem sou e sobre o que
@@ -34,7 +44,7 @@ const Sobre2 = () => {
           </p>
         </div>
         <section>
-          <div className={styles.informacoes}>
+          <div className="informacoes2">
             <h3>Quem sou?</h3>
             <p>
               Meu nome é <strong>Marcos Vinicius</strong>, tenho 19 anos e sou
@@ -56,16 +66,16 @@ const Sobre2 = () => {
             <a href="#">CONTATO</a>
           </div>
 
-          <div className={styles.imagem}>
+          <div className="imagem1">
             <h3>Minhas Habilidades</h3>
-            <div className={styles.tecedescricao}>
-              <div className={styles.tecnologias}>
+            <div className="tecedescricao">
+              <div className="tecnologias">
                 {habilidades.map((hab) => {
                   const { src, conceito } = hab;
                   const Src: string = src;
                   return (
                     <div
-                      className={styles.tecnologia}
+                      className="tecnologia"
                       onClick={() => {
                         setConceito(conceito);
                       }}
@@ -75,9 +85,9 @@ const Sobre2 = () => {
                   );
                 })}
               </div>
-              <p className={styles.conceito}>{conceito}</p>
-                        </div>
+              <p className="conceito">{conceito}</p>
             </div>
+          </div>
         </section>
       </div>
     </div>

@@ -28,7 +28,7 @@ const Menu = ({estadoMenu, darkMode}: props) => {
 
     return(
         <div id={`${ClassDarkMode}`}>
-          <div className='conteudo'>
+          <div className='conteudo1'>
             <div>
               <p className={`${corPort}`}>
                 Port<span>fólio</span>
