@@ -1,0 +1,90 @@
+.sideDark, .sideLight, .container6 {
+  position: fixed;
+  left: 0;
+  bottom: 50%;
+  margin-bottom: -150px;
+  height: 300px;
+  width: 60px;
+  background-color: #fff;
+  box-shadow: 2px 2px 8px 5px #00000018;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.2s all;
+}
+
+.sideLight{
+    background-color: #fff;
+}
+
+.sideDark{
+    background-color: #292C2D;
+}
+
+.sideDark div, .sideLight div {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s all;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.sideLight div:hover {
+  background-color: #00000041;
+}
+
+.sideDark div:hover {
+  background-color: #cac5c541;
+}
+
+.sideLight .icones{
+  color:#292C2D ;
+  transition: 0.2s all;
+}
+
+.sideDark .icones{
+  color:#CDC8C2 ;
+  transition: 0.2s all;
+}
+
+#audio {
+  margin-left: 400px;
+  display: none;
+}
+
+#somOff {
+  display: none;
+}
+
+.botoesSom {
+  height: max-content;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .sideDark, .sideLight {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sideDark, .sideLight {
+    display: flex;
+    bottom: 0;
+    margin-bottom: 0;
+    flex-direction: row;
+    height: 60px;
+
+    width: 100%;
+    overflow: hidden;
+  }
+}

@@ -1,22 +1,30 @@
+import { useEffect, useState } from "react";
 import IconGithub from "../../icons/IconGithub";
 import IconInstagram from "../../icons/IconInsta";
 import IconLinkedin from "../../icons/IconLinkedIn";
-import styles from "../../styles/contato/Contato.module.css";
+import "../../styles/contato/Contato.css";
 
-const Contato = () => {
+type props = {
+  darkMode: boolean;
+};
+
+const Contato = ({ darkMode }: props) => {
+  const [contatoDark, setContatoDark] = useState("contatoLight");
+
+  useEffect(() => {
+    if (darkMode) setContatoDark("contatoDark");
+    else setContatoDark("contatoLight");
+  }, [darkMode]);
+
   return (
-    <div className={styles.container}>
-      <div className={styles.tudo}>
-        <h2 className={styles.titulo}>
-          CONTATO
-        </h2>
-        <p>
-          Aqui você pode preencher o formulário para me enviar um E-mail.
-        </p>
-        <div className={styles.conteudo}>
-          <div className={styles.esquerda}>
+    <div className={`${contatoDark}`}>
+      <div className="tudo">
+        <h2 className="titulo4">CONTATO</h2>
+        <p>Aqui você pode preencher o formulário para me enviar um E-mail.</p>
+        <div className="conteudo5">
+          <div className="esquerda">
             <form>
-              <section className={styles.formDentro}>
+              <section className="formDentro">
                 <input
                   type="text"
                   name="Nome"
@@ -44,38 +52,38 @@ const Contato = () => {
               </section>
             </form>
           </div>
-          <div className={styles.direita}>
-            <div className={styles.informacoes}>
+          <div className="direita">
+            <div className="informacoes5">
               <div>
-                <h2 className={styles.titulo2}>E-mail para contato</h2>
+                <h2 className="titulo3">E-mail para contato</h2>
                 <p>m4rcosfranc4@gmail.com</p>
               </div>
-              <div className={styles.todasasRedes}>
-                <h2 className={styles.titulo2}>Adicione nas redes</h2>
-                <div className={styles.minhasRedes}>
-                  <div className={styles.estruturaRedes}>
+              <div className="todasasRedes">
+                <h2 className="titulo3">Adicione nas redes</h2>
+                <div className="minhasRedes">
+                  <div className="estruturaRedes">
                     <IconLinkedin
                       width={33}
                       height={33}
-                      className={styles.redes}
+                      className="redes"
                       color="#fff"
                     />
                     <p>@mvfranc4</p>
                   </div>
-                  <div className={styles.estruturaRedes}>
+                  <div className="estruturaRedes">
                     <IconGithub
                       width={33}
                       height={33}
-                      className={styles.redes}
+                      className="redes"
                       color="#fff"
                     />
                     <p>@MvFranca</p>
                   </div>
-                  <div className={styles.estruturaRedes}>
+                  <div className="estruturaRedes">
                     <IconInstagram
                       width={33}
                       height={33}
-                      className={styles.redes}
+                      className="redes"
                       color="#fff"
                     />
                     <p>@marc0sfranca</p>

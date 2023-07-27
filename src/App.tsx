@@ -31,7 +31,9 @@ function App() {
       darkMode={stateDarkMode}
       />
       <Projetos darkMode={stateDarkMode} />
-      <Contato />
+      <Contato 
+      darkMode={stateDarkMode}
+      />
       <Footer />
     </>
   );

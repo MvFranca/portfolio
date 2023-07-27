@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&display=swap");
 
 
-.container{
+.contatoDark, .contatoLight{
    height: max-content;
     width: 100vw;
     padding: 30px 0px;
@@ -16,6 +16,13 @@
       ),
       url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
     overflow: hidden;
+    transition: 0.5s all;
+}
+
+
+.contatoDark{
+    background: linear-gradient(to right, rgba(36, 38, 39, 0.87), rgba(36, 38, 39, 0.87)), 
+      url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
 }
 
 .tudo{
@@ -28,7 +35,7 @@
 
 .tudo p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 20px;
+
 }
 
 .direita, .esquerda{
@@ -39,8 +46,6 @@
     flex-direction: column;
     
 }
-
-
 
 .esquerda{
     width: 43.7%;
@@ -74,21 +79,34 @@
     border-radius: 5px;
 }
 
-.esquerda textarea::placeholder{
+.contatoDark .esquerda input, .contatoDark .esquerda textarea, .contatoDark .esquerda button{
+    background-color: #CDC8C2;
+    color: #292c2d;
+}
+
+.contatoLight .esquerda textarea::placeholder{
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.esquerda input::placeholder{
-    color: #feffff;
+.contatoDark .esquerda textarea::placeholder{
+    color: #292c2d;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+
+.contatoLight .esquerda input::placeholder{
+    color: #ffffff;
+}
+
+.contatoDark .esquerda input::placeholder{
+    color: #292c2d;
+}
 
 .esquerda textarea{
     height: 150px;
     resize:none;
 }
-
 
 .direita{
     text-align: initial;
@@ -104,23 +122,26 @@
     color: #292c2d;
 }
 
-.titulo, .titulo2{
+.titulo4, .titulo3{
     width: fit-content;
     font-size: 2.3em;
-    color: #292c2d;
 
     font-family: "Source Sans 3", sans-serif, Arial;
-    
 }
 
-.titulo2{
+.contatoDark .titulo4, .contatoDark .titulo3, .contatoDark p{
+    color: #CDC8C2;
+}
+
+
+.titulo3{
     width: fit-content;
     font-size: 1.8em;
     border: none;
     margin-bottom: 10px;
 }
 
-.conteudo{
+.conteudo5{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -152,7 +173,10 @@
     border-radius: 5px ;
 }
 
-
+.contatoDark .redes{
+    background-color: #CDC8C2;
+    color: #292c2d;
+}
 
 .estruturaRedes{
     display: flex;
@@ -160,7 +184,7 @@
     align-items: center;
 }
 
-.informacoes{
+.informacoes5{
     min-width: 240px;
     width: max-content;
 }
@@ -182,7 +206,7 @@
     }
 
     
-    .informacoes{
+    .informacoes5{
         min-width: 240px;
         width: 60%;
     }

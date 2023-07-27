@@ -5,7 +5,7 @@ import IconSound from "../../icons/IconSoundActived";
 import IconSoundOff from "../../icons/IconSoundOff";
 import IconBxlTelegram from "../../icons/IconTelegram";
 import IconTwitter from "../../icons/IconTwitter";
-import styles from "../../styles/menu/SideBar.module.css";
+import "../../styles/menu/SideBar.css";
 import {useEffect, useRef, useState, } from 'react'
 
 type props = {
@@ -20,6 +20,7 @@ const SideBar = ({alterarCores, darkMode}: props) => {
   const [stateSom, setStateSom] = useState(false)
   const light = useRef<HTMLDivElement>(null)
   const dark = useRef<HTMLDivElement>(null)
+  const [sideDark, setSideDark] = useState('sideLight')
 
   useEffect(()=> {
     desligar.current!.style.display = 'none'
@@ -30,10 +31,11 @@ const SideBar = ({alterarCores, darkMode}: props) => {
     if(!darkMode) {
       dark.current!.style.display = 'none'
       light.current!.style.display = 'flex'
-    
+      setSideDark("sideLight")
     }else{
       dark.current!.style.display = 'flex'
       light.current!.style.display = 'none'
+      setSideDark("sideDark")
     }
   },[darkMode])
 
@@ -59,37 +61,37 @@ const SideBar = ({alterarCores, darkMode}: props) => {
 
 
   return (
-    <div className={styles.container}>
+    <div className={`${sideDark}`}>
 
       <div>
-        <IconInstagram width={33} height={33} color="#292c2d"/>
+        <IconInstagram width={33} height={33} className = "icones"/>
       </div>
 
       <div>
-        <IconTwitter width={33} height={33} color="#292c2d"/>
+        <IconTwitter width={33} height={33} className = "icones"/>
       </div>
 
       <div>
-        <IconBxlTelegram width={33} height={33} color="#292c2d"/>
+        <IconBxlTelegram width={33} height={33} className = "icones"/>
       </div>
 
       <div ref={light} onClick={alterarCores}>
-        <IconSun width={30} height={30} color="#292c2d" />
+        <IconSun width={30} height={30} className = "icones" />
       </div>
 
       <div ref={dark} onClick={alterarCores}>
-        <IconSunFill  width={30} height={30}/>
+        <IconSunFill  width={30} height={30} className = "icones" />
       </div>
 
-      <div ref={ligar} onClick={ligarSom} className={styles.botoesSom}>
-        <IconSoundOff width={30} height={30} color="#292c2d"  />
+      <div ref={ligar} onClick={ligarSom} className="botoesSom">
+        <IconSoundOff width={30} height={30} className = "icones"  />
       </div>
 
-      <div ref={desligar} onClick={desligarSom} className={styles.botoesSom}>
-         <IconSound width={30} height={30} color="#292c2d"   />
+      <div ref={desligar} onClick={desligarSom} className="botoesSom">
+         <IconSound width={30} height={30} className = "icones"   />
       </div>
     
-      <audio id={styles.audio} ref={som} loop>
+      <audio id="audio" ref={som} loop>
           <source src="./reminder.mp3" type="audio/mpeg" />
       </audio>
     </div>
