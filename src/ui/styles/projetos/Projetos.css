@@ -36,7 +36,7 @@
 }
 
 #verMais p:hover{
-    background-color: #b3afaf;
+    background-color: #292c2d67;
     color: #fff;
 }
 
@@ -61,7 +61,6 @@
     height: 130vh;
     display: flex;
     flex-direction: column;
-
     align-items: center;
     gap: 50px;
 }

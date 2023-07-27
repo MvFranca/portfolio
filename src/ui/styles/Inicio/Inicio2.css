@@ -33,6 +33,8 @@
   color: #292c2d;
 }
 
+
+
 .textosDark{
   color: #CDC8C2;
 }
@@ -124,6 +126,40 @@
   color: #929292;
 }
 
+.textAnimado{
+ 
+  animation: cursor 530ms infinite normal, texto 4s steps(38) 0.5s normal;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: 0.2s all;
+}
+
+.darkMode .textAnimado{
+  border-right: 2px solid rgba(245, 245, 245, 0.658);
+}
+
+.lightMode .textAnimado{
+  border-right: 2px solid rgba(36, 38, 39, 0.87);
+}
+
+@keyframes cursor{
+  from{
+  }
+  to{
+    border-right-color: transparent;
+  }
+}
+
+@keyframes texto {
+  from{
+    width: 0;
+
+  }
+  to{
+    width: 14.7em;
+  }
+}
+
 @keyframes descer {
   0% {
     bottom: 25px;
@@ -139,11 +175,27 @@
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 850px){
   .informacoes h1 {
     font-size: 3em;
     width: 80%;
     min-width: 330px;
+  }
+
+
+  .textAnimado{
+    animation:none;
+    white-space: normal;
+    overflow: hidden;
+    transition: 0.2s all;
+  }
+
+  .darkMode .textAnimado{
+    border-right: transparent;
+  }
+  
+  .lightMode .textAnimado{
+    border-right: transparent;
   }
 
   .informacoes p {

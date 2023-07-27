@@ -26,7 +26,7 @@ const Inicio2 = ({ darkMode }: props) => {
   return (
     <section className={`${ClassDarkMode}`} id="infoMenu">
       <div className="informacoes" >
-        <h1 className={`${corTextos}`}>OLÁ, EU SOU O MARCOS VINICIUS</h1>
+        <h1 className={`${corTextos} textAnimado`} >OLÁ, EU SOU O MARCOS VINICIUS</h1>
         <p className={`${corTextos}`}>
           Um apaixonado por tecnologia, atualmente atuando como Desenvolvedor
           Web Front-End, criando e reproduzindo designs fiéis e responsivos.
