@@ -107,11 +107,16 @@
   color: #8d8a86;
 }
 
-.seta {
+#setinha{
   position: absolute;
+    animation: descer 1.5s linear infinite;
+    margin-left: -15px;
   bottom: 25px;
   cursor: pointer;
-  animation: descer 1.5s linear infinite;
+}
+
+.seta {
+ 
   transition: 0.2s all;
 }
 

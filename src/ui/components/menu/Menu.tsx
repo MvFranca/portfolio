@@ -35,10 +35,11 @@ const Menu = ({estadoMenu, darkMode}: props) => {
               </p>
             </div>
             <nav>
-              <div><a href="#inicio" className={corTextos}>Início</a></div>
-              <div><a href="#sobre" className={corTextos}>Sobre</a></div>
-              <div><a href="#" className={corTextos}>Habilidades</a></div>
-              <div><a href="#" className={corTextos}>Projetos</a></div>
+              <div><a href="#infoMenu" className={corTextos}>Início</a></div>
+              <div><a href="#sobreMenu" className={corTextos}>Sobre</a></div>
+              <div><a href="#projetosMenu" className={corTextos}>Projetos</a></div>
+              <div><a href="#contatoMenu" className={corTextos}>Contato</a></div>
+              
             </nav>
             <div className='botaoMenu' onClick={estadoMenu}>
               <IconMenuLine width={43} height={43} color='#929292' id='tracos'/>

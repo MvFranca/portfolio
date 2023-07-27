@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../../styles/projetos/Projetos.css";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -17,7 +17,21 @@ const Projetos = ({darkMode}: props) => {
 
     const [ClassDarkMode, setIdDarkMode] = useState("lightProjects");
     const [corTextos, setCorTextos] = useState("textosLight");
+    const [VerMais, setVerMais] = useState("mais")
+    const conteudo = useRef<HTMLDivElement>(null)
+
+    function verMais(){
+      if( conteudo.current!.style.height == '130vh'){
+      conteudo.current!.style.height = 'max-content'
+      setVerMais("menos")}
+      else{
+        conteudo.current!.style.height = '130vh'
+        setVerMais("mais")
+      }
   
+    }
+  
+
     useEffect(() => {
       if (darkMode) {
         setIdDarkMode("darkProjects");
@@ -44,6 +58,7 @@ const Projetos = ({darkMode}: props) => {
 
   useEffect(() => {
     void api();
+    conteudo.current!.style.height = '130vh'
   }, []);
 
   function fecharTec() {
@@ -51,8 +66,8 @@ const Projetos = ({darkMode}: props) => {
   }
 
   return (
-    <div id={`${ClassDarkMode}`}>
-      <div className="conteudo2">
+    <div className={`${ClassDarkMode}`} id="projetosMenu">
+      <div className="conteudo2" ref={conteudo}>
         <div>
           <h2 className={`titulo ${corTextos}`} >PROJETOS</h2>
           <p className={`${corTextos}`}>
@@ -76,6 +91,9 @@ const Projetos = ({darkMode}: props) => {
             />
           );
         })}
+      </div>
+      <div id="verMais">
+        <p onClick={verMais}>Ver {VerMais}</p>
       </div>
     </div>
   );

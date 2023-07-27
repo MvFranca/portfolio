@@ -4,7 +4,7 @@
 .contatoDark, .contatoLight{
    height: max-content;
     width: 100vw;
-    padding: 30px 0px;
+    padding: 80px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +17,7 @@
       url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
     overflow: hidden;
     transition: 0.5s all;
+    box-shadow: -55px 0px 55px 55px rgb(155, 155, 154);
 }
 
 

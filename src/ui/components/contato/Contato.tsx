@@ -17,7 +17,7 @@ const Contato = ({ darkMode }: props) => {
   }, [darkMode]);
 
   return (
-    <div className={`${contatoDark}`}>
+    <div className={`${contatoDark}`} id="contatoMenu">
       <div className="tudo">
         <h2 className="titulo4">CONTATO</h2>
         <p>Aqui você pode preencher o formulário para me enviar um E-mail.</p>

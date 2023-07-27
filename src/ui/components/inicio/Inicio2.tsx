@@ -24,8 +24,8 @@ const Inicio2 = ({ darkMode }: props) => {
   }, [darkMode]);
 
   return (
-    <section className={`${ClassDarkMode}`}>
-      <div className="informacoes">
+    <section className={`${ClassDarkMode}`} id="infoMenu">
+      <div className="informacoes" >
         <h1 className={`${corTextos}`}>OLÁ, EU SOU O MARCOS VINICIUS</h1>
         <p className={`${corTextos}`}>
           Um apaixonado por tecnologia, atualmente atuando como Desenvolvedor
@@ -41,11 +41,13 @@ const Inicio2 = ({ darkMode }: props) => {
         </div>
       </div>
 
-      <IconArrowDownShort
-        width={30}
-        height={30}
-        className={`seta ${corTextos}`}
-      />
+      <a href="#sobreMenu" id="setinha">
+        <IconArrowDownShort
+          width={30}
+          height={30}
+          className={`seta ${corTextos}`}
+        />
+      </a>
     </section>
   );
 };

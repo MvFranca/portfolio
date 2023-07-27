@@ -19,6 +19,11 @@
   color: #cdc8c2;
 }
 
+.lightProjeto h3:hover, .darkProjeto h3:hover {
+ text-decoration: underline;
+ cursor: pointer;
+}
+
 .lightProjeto a {
   background-color: #292c2d;
   color: #fff;

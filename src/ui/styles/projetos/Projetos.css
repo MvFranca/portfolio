@@ -1,21 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&display=swap");
 
 
-#lightProjects, #darkProjects{
+.lightProjects, .darkProjects{
     height: max-content;
     width: 100%;
     display: flex;
+
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    overflow: auto;
-    padding-top: 30px;
+    overflow: hidden;
+    padding-top: 80px;
+
 }
 
-#darkProjects{
-    background-color: #3E3F40;
+#verMais{
+
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 15px;
+
 }
 
-#lightProjects{
+#verMais p{
+    padding: 10px 40px;
+    background-color: #fcfbfa;
+    color: #060607;
+  
+    border: 2px solid #3e3f4062;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+#verMais p:hover{
+    background-color: #b3afaf;
+    color: #fff;
+}
+
+.darkProjects{
+    background-color: #5e5c5c;
+}
+
+.lightProjects{
     background-color: rgb(248, 248, 247);
 }
 
@@ -29,10 +58,10 @@
 
 .conteudo2{
     width: 90%;
-    height: max-content;
+    height: 130vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
     gap: 50px;
 }

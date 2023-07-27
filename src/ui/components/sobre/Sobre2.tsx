@@ -34,7 +34,7 @@ const Sobre2 = ({ darkMode }: props) => {
 }, [darkMode])
 
   return (
-    <div className={`${sobreDark}`}>
+    <div className={`${sobreDark}`} id="sobreMenu">
       <div className="conteudo4">
         <div className="titulo2">
           <h2>SOBRE MIM</h2>

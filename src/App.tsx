@@ -21,11 +21,17 @@ function App() {
     setStateDarkMode(!stateDarkMode);
   }
 
+  function exitMenu(){
+    setStateMenu(false)
+  }
+
   return (
     <>
       <MenuMobile 
       stateMenu={stateMenu} 
-      darkMode={stateDarkMode} />
+      darkMode={stateDarkMode} 
+      exitMenu = {exitMenu}
+      />
 
       <Menu estadoMenu={estadoMenu} 
       darkMode={stateDarkMode} />
