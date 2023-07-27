@@ -211,5 +211,19 @@
         width: 60%;
     }
 
-   
+    .esquerda input, .esquerda textarea, .esquerda button{
+        width: 90%;
+    }
+    
+
+}
+
+@media screen and (max-width: 600px) {
+.esquerda input, .esquerda textarea, .esquerda button{
+    width: 100%;
+}
+
+.direita, .informacoes5{
+    width: 100%;
+}
 }

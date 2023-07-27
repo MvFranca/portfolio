@@ -1,0 +1,47 @@
+.lightMenuMobile, .darkMenuMobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    transition: 0.2s all;
+}
+
+.lightMenuMobile{
+    background-color: #fdffff;
+    color: #262A2B;
+}
+
+.darkMenuMobile{
+    background-color: #292C2D;
+    color: #fff;
+}
+
+.lightMenuMobile nav, .darkMenuMobile nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.lightMenuMobile nav a, .darkMenuMobile nav a{
+    padding: 20px;
+    transition: 0.2s all;
+}
+
+.lightMenuMobile nav a{
+    color: #262A2B;
+}
+
+.lightMenuMobile nav a:hover, .darkMenuMobile nav a:hover{
+    color: #262A2B;
+    text-decoration: underline;
+}
+
+.darkMenuMobile nav a:hover{
+    color: #f0f4f5;
+}

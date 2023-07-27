@@ -1,17 +1,26 @@
-import styles from '../../styles/menu/MenuMobile.module.css'
-
+/* eslint-disable react-hooks/exhaustive-deps */
+import {  useState, useEffect,} from 'react';
+import '../../styles/menu/MenuMobile.css'
 
 
 type props = {
   stateMenu: boolean;
+  darkMode: boolean;
 }
 
-const MenuMobile = ({stateMenu}: props) => {
+const MenuMobile = ({stateMenu, darkMode}: props) => {
+
+    const [darkMenu, setDarkMenu] = useState("lightMenuMobile")
+
+    useEffect(() => {
+        if(!darkMode) setDarkMenu("lightMenuMobile")
+        else setDarkMenu("darkMenuMobile")
+    }, [darkMode])
 
   if(!stateMenu) return
 
   return (
-    <header className={styles.cabecalho}>
+    <header className={`${darkMenu}`}>
       <nav>
         <a href="#inicio">Início</a>
         <a href="#sobre">Sobre</a>

@@ -23,17 +23,30 @@ function App() {
 
   return (
     <>
-      <MenuMobile stateMenu={stateMenu} />
-      <Menu estadoMenu={estadoMenu} darkMode={stateDarkMode} />
-      <SideBar alterarCores={alterarCores} darkMode={stateDarkMode} />
-      <Inicio2 darkMode={stateDarkMode} />
+      <MenuMobile 
+      stateMenu={stateMenu} 
+      darkMode={stateDarkMode} />
+
+      <Menu estadoMenu={estadoMenu} 
+      darkMode={stateDarkMode} />
+
+      <SideBar alterarCores={alterarCores} 
+      darkMode={stateDarkMode} />
+
+      <Inicio2 
+      darkMode={stateDarkMode} />
+
       <Sobre2 
       darkMode={stateDarkMode}
       />
-      <Projetos darkMode={stateDarkMode} />
+
+      <Projetos 
+      darkMode={stateDarkMode} />
+
       <Contato 
       darkMode={stateDarkMode}
       />
+      
       <Footer />
     </>
   );
