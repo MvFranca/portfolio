@@ -9,15 +9,18 @@ type props = {
 const Inicio2 = ({ darkMode }: props) => {
   const [ClassDarkMode, setIdDarkMode] = useState("lightMode");
   const [corTextos, setCorTextos] = useState("textosLight");
+  const [corBotoes, setCorBotoes] = useState("botoesLight");
 
   useEffect(() => {
     if (darkMode) {
       setIdDarkMode("darkMode");
       setCorTextos("textosDark");
+      setCorBotoes("botoesDark")
     } 
     else {
         setIdDarkMode("lightMode");
         setCorTextos("textosLight")
+        setCorBotoes("botoesLight")
     }
   }, [darkMode]);
 
@@ -31,19 +34,19 @@ const Inicio2 = ({ darkMode }: props) => {
           Um apaixonado por tecnologia, atualmente atuando como Desenvolvedor
           Web Front-End, criando e reproduzindo designs fiéis e responsivos.
         </p>
-        <div id="botoes">
-          <a href="#" id="github">
+        <div id="botoes" >
+          <a href="#" id="github"  className={`${corBotoes}`}>
             GitHub
           </a>
-          <a href="#">LinkedIn</a>
+          <a href="#"  className={`${corBotoes}`}>LinkedIn</a>
         </div>
       </div>
 
       <IconArrowDownShort
         width={30}
         height={30}
-        color="#292C2D"
-        className="seta"
+        className={`seta ${corTextos}`}
+
       />
     </section>
   );

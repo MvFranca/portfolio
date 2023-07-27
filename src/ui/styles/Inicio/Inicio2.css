@@ -74,9 +74,10 @@
   box-sizing: border-box;
 }
 
-#botoes a {
-  background-color: #292c2d;
-  color: #fff;
+
+
+.botoesLight, .botoesDark{
+ 
   padding: 15px 65px;
   border-radius: 5px;
   font-weight: bold;
@@ -85,8 +86,25 @@
   box-shadow: 0px 2px 4px #00000065;
 }
 
-#botoes a:hover {
+.botoesDark{
+  background-color: #8a8987;
+  color: #292c2d;
+}
+
+.botoesLight{
+  background-color: #292c2d;
+  color: #fff;
+}
+
+.botoesDark:hover {
   margin-top: -10px;
+  color: #3f3e3d;
+}
+
+
+.botoesLight:hover {
+  margin-top: -10px;
+  color: #8d8a86;
 }
 
 .seta {

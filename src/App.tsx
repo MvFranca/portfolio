@@ -20,6 +20,7 @@ function App() {
 
   function alterarCores(){
     setStateDarkMode(!stateDarkMode)
+    console.log(stateDarkMode)
   }
   
   return (
@@ -33,6 +34,7 @@ function App() {
       />
       <SideBar
       alterarCores={alterarCores}
+      darkMode = {stateDarkMode}
       />
       <Inicio2
       darkMode = {stateDarkMode}
