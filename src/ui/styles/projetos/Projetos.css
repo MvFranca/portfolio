@@ -61,6 +61,7 @@
     height: 130vh;
     display: flex;
     flex-direction: column;
+    transition: 2s all;
     align-items: center;
     gap: 50px;
 }
@@ -77,5 +78,16 @@
 @media screen and (max-width: 1000px) {
     .conteudo2{
         gap: 50px;
+    }
+
+    
+    .lightProjects #verMais p:hover{
+        color: #5e5c5c;
+        background-color: rgb(248, 248, 247);
+    }
+
+    .darkProjects #verMais p:hover{
+        background-color: rgb(248, 248, 247);
+        color: #5e5c5c;
     }
 }

@@ -63,7 +63,7 @@ const Sobre2 = ({ darkMode }: props) => {
               <strong> aprender rapidamente</strong> conteúdos que se façam
               necessários.
             </p>
-            <a href="#">CONTATO</a>
+            <a href="#contatoMenu">CONTATO</a>
           </div>
 
           <div className="imagem1">

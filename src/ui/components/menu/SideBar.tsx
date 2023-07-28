@@ -1,3 +1,4 @@
+import IconCloseOutline from "../../icons/fecharMenu";
 import IconSunFill from "../../icons/IconDarkMode";
 import IconInstagram from "../../icons/IconInsta";
 import IconSun from "../../icons/IconLightMode";
@@ -6,6 +7,8 @@ import IconSoundOff from "../../icons/IconSoundOff";
 import IconBxlTelegram from "../../icons/IconTelegram";
 import IconTwitter from "../../icons/IconTwitter";
 import "../../styles/menu/SideBar.css";
+
+
 import {useEffect, useRef, useState, } from 'react'
 
 type props = {
@@ -61,39 +64,43 @@ const SideBar = ({alterarCores, darkMode}: props) => {
 
 
   return (
-    <div className={`${sideDark}`}>
-
+    <div>
       <div>
-        <IconInstagram width={33} height={33} className = "icones"/>
+        <IconCloseOutline width={25} height={25} className="fecharMenu" />
       </div>
-
-      <div>
-        <IconTwitter width={33} height={33} className = "icones"/>
+      <div className={`${sideDark}`}>
+        <a href="https://www.instagram.com/marc0sfranca/" target="_blank">
+          <div>
+            <IconInstagram width={33} height={33} className = "icones"/>
+          </div>
+        </a>
+        <div>
+          <a href="https://twitter.com/euDEV__" target="_blank">
+            <IconTwitter width={33} height={33} className = "icones"/>
+          </a>
+        </div>
+        <div>
+          <a href="https://t.me/+erR6yKBznYdmODcx">
+            <IconBxlTelegram width={33} height={33} className = "icones"/>
+          </a>
+        </div>
+        <div ref={light} onClick={alterarCores}>
+          <IconSun width={30} height={30} className = "icones" />
+        </div>
+        <div ref={dark} onClick={alterarCores}>
+          <IconSunFill  width={30} height={30} className = "icones" />
+        </div>
+        <div ref={ligar} onClick={ligarSom} className="botoesSom">
+          <IconSoundOff width={30} height={30} className = "icones"  />
+        </div>
+        <div ref={desligar} onClick={desligarSom} className="botoesSom">
+           <IconSound width={30} height={30} className = "icones"   />
+        </div>
+      
+        <audio id="audio" ref={som} loop>
+            <source src="./reminder.mp3" type="audio/mpeg" />
+        </audio>
       </div>
-
-      <div>
-        <IconBxlTelegram width={33} height={33} className = "icones"/>
-      </div>
-
-      <div ref={light} onClick={alterarCores}>
-        <IconSun width={30} height={30} className = "icones" />
-      </div>
-
-      <div ref={dark} onClick={alterarCores}>
-        <IconSunFill  width={30} height={30} className = "icones" />
-      </div>
-
-      <div ref={ligar} onClick={ligarSom} className="botoesSom">
-        <IconSoundOff width={30} height={30} className = "icones"  />
-      </div>
-
-      <div ref={desligar} onClick={desligarSom} className="botoesSom">
-         <IconSound width={30} height={30} className = "icones"   />
-      </div>
-    
-      <audio id="audio" ref={som} loop>
-          <source src="./reminder.mp3" type="audio/mpeg" />
-      </audio>
     </div>
   );
 };

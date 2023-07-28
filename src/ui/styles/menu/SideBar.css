@@ -35,6 +35,12 @@
   border-radius: 5px;
 }
 
+.sideDark div a, .sideLight div a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .sideLight div:hover {
   background-color: #00000041;
 }
@@ -69,6 +75,29 @@
   justify-content: center;
   align-items: center;
 }
+
+.fecharMenu{
+  position: fixed;
+  display: none;
+  padding: 5px;
+  top: 25.5%;
+  left: 2.35%;
+
+}
+
+.fecharMenu:hover{
+  color: rgb(253, 0, 0);
+  cursor: pointer;
+}
+
+.sideLight:hover .fecharMenu{
+    display: block;
+}
+
+.sideDark div:hover {
+  background-color: #cac5c541;
+}
+
 
 @media screen and (max-width: 1000px) {
   .sideDark, .sideLight {

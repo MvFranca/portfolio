@@ -4,27 +4,39 @@
       "titulo": "POKENEXT",
       "img": "./projetos/pokenext.png",
       "tecnologias": "NextJs e ReactJs",
-      "descricao": "Exibe 251 Pokemons dinâmicamente... opa meu amigo opa meu amigoaaaopa meu amigo opa meu amigo opa meu amigo opa meu amigos amigossss."
+      "descricao": "Exibe 251 Pokemons dinâmicamente... opa meu amigo opa meu amigoaaaopa meu amigo opa meu amigo opa meu amigo opa meu amigos amigossss.",
+      "link": "https://github.com/MvFranca/pokenextt"
     },
     {
       "id": "2",
       "titulo": "TODO LIST",
       "img": "./projetos/todolist.png",
       "tecnologias": "ReactJs e MONGODB",
-      "descricao": "Permite adicionar, editar e excluir tarefas. opa meu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa meu amigo."
+      "descricao": "Permite adicionar, editar e excluir tarefas. opa meu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa meu amigo.",
+      "link": "https://github.com/MvFranca/to-do-list-express"
     },
     {
       "id": "3",
       "titulo": "MV GPT",
       "img": "./projetos/mvgpt.png",
       "tecnologias": "NextJs, ReactJs e Typescript",
-      "descricao": "Design fiel ao chatgpt opa meu amigo opa meuamigo opa meu amigo opa meu amigo opa meu amigo opa meu amigo gfgfhgf hjmhgjmghmjgh meu amigo opaa. "
+      "descricao": "Design fiel ao chatgpt opa meu amigo opa meuamigo opa meu amigo opa meu amigo opa meu amigo opa meu amigo gfgfhgf hjmhgjmghmjgh meu amigo opaa. ",
+      "link": "https://github.com/MvFranca/MvGPT"
     },
     {
       "id": "4",
+      "titulo": "LOGIN",
+      "img": "./projetos/login-simplifica.png",
+      "tecnologias": "HTML, CSS",
+      "descricao": "Tela de login utilizando <strong>s</strong> meu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa  meu amigomeu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa.",
+      "link": "https://github.com/MvFranca/html-css"
+    },
+    {
+      "id": "5",
       "titulo": "ANDROID",
       "img": "./projetos/android.png",
       "tecnologias": "HTML, CSS",
-      "descricao": "Traz informações sobre o Anroid. meu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa  meu amigomeu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa."
+      "descricao": "Traz informações sobre o Anroid. meu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa  meu amigomeu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa.",
+      "link": "https://github.com/MvFranca/html-css"
     }
   ]
