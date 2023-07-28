@@ -128,7 +128,8 @@
 
 .textAnimado{
  
-  animation: cursor 530ms infinite normal, texto 4s steps(38) 0.5s normal;
+  animation: cursor 530ms infinite normal, texto 4s steps(38) 
+   normal;
   white-space: nowrap;
   overflow: hidden;
   transition: 0.2s all;
