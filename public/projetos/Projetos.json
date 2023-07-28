@@ -4,7 +4,7 @@
       "titulo": "POKENEXT",
       "img": "./projetos/pokenext.png",
       "tecnologias": "NextJs e ReactJs",
-      "descricao": "Exibe 251 Pokemons dinâmicamente através do consumo de uma API, além de também possuir rotas dinâmicas criadar a partir do uso do NextJS + React.",
+      "descricao": "Exibe 251 Pokemons dinâmicamente através do consumo de uma API, além de também possuir rotas dinâmicas criadas a partir do uso do NextJS + React.",
       "link": "https://github.com/MvFranca/pokenextt"
     },
     {
@@ -29,7 +29,7 @@
       "img": "./projetos/login-simplifica.png",
       "tecnologias": "HTML, CSS",
       "descricao": "Tela de login desenvolvida utilizando o React Router, onde se pode navegar entre as telas de Login e Registro, com um design totalmente moderno e responsivo.",
-      "link": "https://github.com/MvFranca/html-css"
+      "link": "https://github.com/MvFranca/Login-Projeto"
     },
     {
       "id": "5",
@@ -37,7 +37,7 @@
       "img": "./projetos/duolingo.png",
       "tecnologias": "HTML, CSS",
       "descricao": "Projeto desenvolvido com React e TypeScript tendo o duolingo como modelo, com um design funcional e responsivo. Futuramente, novas funcionalidades serão adicionadas.",
-      "link": "https://github.com/MvFranca/Login-Projeto"
+      "link": "https://github.com/MvFranca/clone-duolingo"
     },
     {
       "id": "6",
