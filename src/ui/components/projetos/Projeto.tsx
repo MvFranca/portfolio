@@ -10,9 +10,10 @@ type props = {
   fecharTec: () => void;
   stateTec: boolean;
   darkMode: boolean;
+  link: string;
 };
 
-const Projeto = ({ description, src, titulo, darkMode }: props) => {
+const Projeto = ({ description, src, titulo, darkMode, link }: props) => {
   const [ClassDarkMode, setIdDarkMode] = useState("lightProjeto");
 
   useEffect(() => {
@@ -29,7 +30,7 @@ const Projeto = ({ description, src, titulo, darkMode }: props) => {
         <section>
           <h3>{titulo}</h3>
           <p>{description}</p>
-          <a href="#" className="github">
+          <a href={link} className="github">
             GITHUB
           </a>
         </section>

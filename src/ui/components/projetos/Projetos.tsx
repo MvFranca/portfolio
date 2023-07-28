@@ -76,7 +76,7 @@ const Projetos = ({darkMode}: props) => {
           </p>
         </div>
         {projetos.map((projeto) => {
-          const { id, titulo, img, tecnologias, descricao } = projeto;
+          const { id, titulo, img, tecnologias, descricao, link } = projeto;
           return (
             <Projeto
               src={img}
@@ -88,6 +88,7 @@ const Projetos = ({darkMode}: props) => {
               fecharTec={fecharTec}
               stateTec={menuTec}
               darkMode={darkMode}
+              link={link}
             />
           );
         })}
