@@ -4,7 +4,7 @@
       "titulo": "POKENEXT",
       "img": "./projetos/pokenext.png",
       "tecnologias": "NextJs e ReactJs",
-      "descricao": "Exibe 251 Pokemons dinâmicamente... opa meu amigo opa meu amigoaaaopa meu amigo opa meu amigo opa meu amigo opa meu amigos amigossss.",
+      "descricao": "Exibe 251 Pokemons dinâmicamente através do consumo de uma API, além de também possuir rotas dinâmicas criadar a partir do uso do NextJS + React.",
       "link": "https://github.com/MvFranca/pokenextt"
     },
     {
@@ -12,7 +12,7 @@
       "titulo": "TODO LIST",
       "img": "./projetos/todolist.png",
       "tecnologias": "ReactJs e MONGODB",
-      "descricao": "Permite adicionar, editar e excluir tarefas. opa meu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa meu amigo.",
+      "descricao": "Permite adicionar, editar e excluir tarefas que ficam armazenadas dentro de um banco de dados não relacional(MONGO DB), sendo algo totalmente utilizável e funcional, caracterizando-se, assim, como uma aplicação FullStack.",
       "link": "https://github.com/MvFranca/to-do-list-express"
     },
     {
@@ -20,7 +20,7 @@
       "titulo": "MV GPT",
       "img": "./projetos/mvgpt.png",
       "tecnologias": "NextJs, ReactJs e Typescript",
-      "descricao": "Design fiel ao chatgpt opa meu amigo opa meuamigo opa meu amigo opa meu amigo opa meu amigo opa meu amigo gfgfhgf hjmhgjmghmjgh meu amigo opaa. ",
+      "descricao": "Site que visa simular todas as funcionalidades presentes no chatGPT, desde a sua interface, até a sua lógica de funcionamento. Seu desenvolvimento se caracteriza por uma forte utilização do Tailwind juntamente do React.",
       "link": "https://github.com/MvFranca/MvGPT"
     },
     {
@@ -28,15 +28,23 @@
       "titulo": "LOGIN",
       "img": "./projetos/login-simplifica.png",
       "tecnologias": "HTML, CSS",
-      "descricao": "Tela de login utilizando <strong>s</strong> meu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa  meu amigomeu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa.",
+      "descricao": "Tela de login desenvolvida utilizando o React Router, onde se pode navegar entre as telas de Login e Registro, com um design totalmente moderno e responsivo.",
       "link": "https://github.com/MvFranca/html-css"
     },
     {
       "id": "5",
+      "titulo": "Clone Duolingo",
+      "img": "./projetos/duolingo.png",
+      "tecnologias": "HTML, CSS",
+      "descricao": "Projeto desenvolvido com React e TypeScript tendo o duolingo como modelo, com um design funcional e responsivo. Futuramente, novas funcionalidades serão adicionadas.",
+      "link": "https://github.com/MvFranca/Login-Projeto"
+    },
+    {
+      "id": "6",
       "titulo": "ANDROID",
       "img": "./projetos/android.png",
       "tecnologias": "HTML, CSS",
-      "descricao": "Traz informações sobre o Anroid. meu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa  meu amigomeu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa.",
+      "descricao": "Traz informações sobre o Android e sua história. Este foi meu primeiro projeto dentro do Front-End, possuindo apenas Html e Css.",
       "link": "https://github.com/MvFranca/html-css"
     }
   ]
