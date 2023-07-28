@@ -32,10 +32,10 @@ const Inicio2 = ({ darkMode }: props) => {
           Web Front-End, criando e reproduzindo designs fiéis e responsivos.
         </p>
         <div id="botoes">
-          <a href="#" id="github" className={`${corBotoes}`}>
+          <a href="https://github.com/MvFranca/" id="github" className={`${corBotoes}`} target="_blank">
             GitHub
           </a>
-          <a href="#" className={`${corBotoes}`}>
+          <a href="https://www.linkedin.com/in/mvfranc4/" className={`${corBotoes}`} target="_blank">
             LinkedIn
           </a>
         </div>
