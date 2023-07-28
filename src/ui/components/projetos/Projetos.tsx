@@ -48,7 +48,7 @@ const Projetos = ({darkMode}: props) => {
 
   async function api() {
     const api = await fetch(
-      "https://portfolio-mvfranca.vercel.app/projetos/Projetos.json"
+      "https://marcosvinicius.vercel.app/projetos/Projetos.json"
     );
     const dados = await api.json();
     setProjetos(dados);

@@ -8,13 +8,13 @@ type props = {
 const Sobre2 = ({ darkMode }: props) => {
   const [habilidades, setHabilidades] = useState([]);
   const [conceito, setConceito] = useState(
-    "Clique nos ícones para saber o que cada um significa."
+    "/* Clique nos ícones para saber o que cada um significa. */"
   );
 
  
   async function hab() {
     const api = await fetch(
-      "https://portfolio-mvfranca.vercel.app/Habilidades.json"
+      "https://marcosvinicius.vercel.app/Habilidades.json"
     );
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const dados = await api.json();

@@ -32,20 +32,20 @@
     {
         "id": "7",
         "src": "./habilidades/figma.png",
-        "conceito": "O Figma é uma plataforma online de criação de interfaces, wireframes e protótipos. Seu papel é oferecer recursos de design de telas para aplicações variadas, permitindo que times de Design trabalhem em conjunto no mesmo projeto remotamente e simultaneamente."
+        "conceito": "O Figma é uma plataforma online de criação de interfaces, wireframes e protótipos. Seu papel é oferecer recursos de design de telas para aplicações variadas, permitindo que times de Design trabalhem em conjunto simultaneamente."
     },
     {
         "id": "8",
         "src": "./habilidades/node.png",
-        "conceito": "O Node é um runtime, que nada mais é do que um conjunto de códigos, API's, ou seja, são bibliotecas responsáveis pelo tempo de execução (é o que faz o seu programa rodar) que funciona como um interpretador de JavaScript fora do ambiente do navegador web."
+        "conceito": "O Node é um runtime, que nada mais é do que um conjunto de códigos, API's, ou seja, são bibliotecas responsáveis pelo tempo de execução que funciona como um interpretador de JavaScript fora do ambiente do navegador web."
     },
     {
         "id": "9",
         "src": "./habilidades/mongo.png",
-        "conceito": "O Mongodb é um banco de dados, orientado por documentos, ou seja, os dados são armazenados como documentos, ao contrário de bancos de dados de modelo relacional, assim é composto por registros que não possuem uma definição formal de sua estrutura, não tendo então o conceito de colunas, chaves estrangeiras e outras formalidades."
+        "conceito": "O Mongodb é um banco de dados, orientado por documentos, ou seja, os dados são armazenados como documentos, ao contrário de bancos de dados de modelo relacional."
     },{
         "id": "10",
         "src": "./habilidades/mysql.png",
-        "conceito": "MySQL é um sistema de gerenciamento de banco de dados relacional de código aberto (RDBMS) apoiado pela Oracle e baseado em linguagem de consulta estruturada (SQL). O MySQL funciona em praticamente todas as plataformas, incluindo Linux, UNIX e Windows."
+        "conceito": "MySQL é um sistema de gerenciamento de banco de dados relacional de código aberto (RDBMS) apoiado pela Oracle e baseado em linguagem de consulta estruturada (SQL)."
     }
 ]

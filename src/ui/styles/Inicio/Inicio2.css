@@ -99,13 +99,11 @@
 }
 
 .botoesDark:hover {
-  margin-top: -10px;
-  color: #3f3e3d;
+  color: #CDC8C2;
 }
 
 
 .botoesLight:hover {
-  margin-top: -10px;
   color: #8d8a86;
 }
 

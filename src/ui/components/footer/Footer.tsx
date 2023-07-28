@@ -5,8 +5,8 @@ const Footer = () => {
         <footer className={styles.rodape}>
         <p>
                Marcos Vinicius
-            /  © 2023  
-            /  Todos os direitos reservados.
+            |  © 2023  
+            |  Todos os direitos reservados.
         </p>
       </footer>
     )

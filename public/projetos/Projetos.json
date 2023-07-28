@@ -33,7 +33,7 @@
     },
     {
       "id": "5",
-      "titulo": "Clone Duolingo",
+      "titulo": "CLONE DUOLINGO",
       "img": "./projetos/duolingo.png",
       "tecnologias": "HTML, CSS",
       "descricao": "Projeto desenvolvido com React e TypeScript tendo o duolingo como modelo, com um design funcional e responsivo. Futuramente, novas funcionalidades serão adicionadas.",

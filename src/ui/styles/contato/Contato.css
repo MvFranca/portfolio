@@ -24,6 +24,7 @@
 .contatoDark{
     background: linear-gradient(to right, rgba(36, 38, 39, 0.87), rgba(36, 38, 39, 0.87)), 
       url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+      box-shadow: -55px 0px 55px 55px rgba(155, 155, 154, 0.644);
 }
 
 .tudo{
@@ -81,8 +82,8 @@
 }
 
 .contatoDark .esquerda input, .contatoDark .esquerda textarea, .contatoDark .esquerda button{
-    background-color: #CDC8C2;
-    color: #292c2d;
+    background-color: #8A8987;;
+
 }
 
 .contatoLight .esquerda textarea::placeholder{
@@ -103,6 +104,30 @@
 .contatoDark .esquerda input::placeholder{
     color: #292c2d;
 }
+
+.contatoLight #submit{
+    font-weight: bold;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+.contatoDark #submit{
+    transition: 0.2s all;
+    font-weight: bold;
+    cursor: pointer;
+    color: #292C2D;
+}
+
+.contatoLight #submit:hover{
+    color: #CDC8C2;
+
+}
+
+.contatoDark #submit:hover{
+    color: #CDC8C2;
+
+}
+
 
 .esquerda textarea{
     height: 150px;

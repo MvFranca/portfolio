@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { useEffect, useRef, useState } from "react";
 import IconGithub from "../../icons/IconGithub";
 import IconInstagram from "../../icons/IconInsta";
 import IconLinkedin from "../../icons/IconLinkedIn";
@@ -10,11 +11,23 @@ type props = {
 
 const Contato = ({ darkMode }: props) => {
   const [contatoDark, setContatoDark] = useState("contatoLight");
+  const form = useRef<HTMLFormElement>(null)
+  const textarea = useRef<HTMLTextAreaElement>(null)
 
   useEffect(() => {
     if (darkMode) setContatoDark("contatoDark");
     else setContatoDark("contatoLight");
   }, [darkMode]);
+
+  function submit(event: React.FormEvent<HTMLFormElement>){
+    event.preventDefault()
+    const valores = Array.from(form.current!.getElementsByTagName("input") ?? [])
+
+    valores.map((valor) =>{
+      valor.value = ''
+    })
+    textarea.current!.value = ''
+  }
 
   return (
     <div className={`${contatoDark}`} id="contatoMenu">
@@ -23,7 +36,7 @@ const Contato = ({ darkMode }: props) => {
         <p>Aqui você pode preencher o formulário para me enviar um E-mail.</p>
         <div className="conteudo5">
           <div className="esquerda">
-            <form>
+            <form onSubmit={submit} ref={form}>
               <section className="formDentro">
                 <input
                   type="text"
@@ -47,9 +60,10 @@ const Contato = ({ darkMode }: props) => {
                   name="Mensagem"
                   id="mensagem"
                   placeholder="Digite sua mensagem..."
+                  ref={textarea}
                 />
-                <button type="submit">ENVIAR</button>
-              </section>
+                
+              </section><button type="submit" id="submit">ENVIAR</button>
             </form>
           </div>
           <div className="direita">

@@ -80,7 +80,7 @@ const SideBar = ({alterarCores, darkMode}: props) => {
           </a>
         </div>
         <div>
-          <a href="https://t.me/+erR6yKBznYdmODcx">
+          <a href="https://t.me/+erR6yKBznYdmODcx"  target="_blank">
             <IconBxlTelegram width={33} height={33} className = "icones"/>
           </a>
         </div>

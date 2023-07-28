@@ -29,9 +29,17 @@
   color: #fff;
 }
 
+.darkProjeto a:hover{
+  color: #CDC8C2;
+}
+
 .darkProjeto a {
-  background-color: #cdc8c2;
+  background-color: #8A8987;
   color: #292c2d;
+}
+
+.lightProjeto a:hover{
+  color: #CDC8C2;
 }
 
 .darkProjeto a,
@@ -48,9 +56,7 @@
   box-sizing: border-box;
 }
 
-.conteudo3 section a:hover {
-  color: #888a8a;
-}
+
 
 .conteudo3 {
   width: 100%;
