@@ -30,7 +30,7 @@ const Projeto = ({ description, src, titulo, darkMode, link }: props) => {
         <section>
           <h3>{titulo}</h3>
           <p>{description}</p>
-          <a href={link} className="github">
+          <a href={link} className="github" target="_blank">
             GITHUB
           </a>
         </section>
