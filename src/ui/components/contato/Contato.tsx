@@ -18,8 +18,8 @@ const Contato = ({ darkMode }: props) => {
     if (darkMode) setContatoDark("contatoDark");
     else setContatoDark("contatoLight");
   }, [darkMode]);
-
-  function submit(event: React.FormEvent<HTMLFormElement>){
+/*
+ function submit(event: React.FormEvent<HTMLFormElement>){
     event.preventDefault()
     const valores = Array.from(form.current!.getElementsByTagName("input") ?? [])
 
@@ -27,7 +27,7 @@ const Contato = ({ darkMode }: props) => {
       valor.value = ''
     })
     textarea.current!.value = ''
-  }
+  }*/
 
   return (
     <div className={`${contatoDark}`} id="contatoMenu">
