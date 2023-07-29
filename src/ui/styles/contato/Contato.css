@@ -81,6 +81,26 @@
     border-radius: 5px;
 }
 
+
+.contatoLight :-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #292C2D inset;
+}
+
+
+.contatoLight :-webkit-autofill {
+    -webkit-text-fill-color: rgb(254, 254, 255) !important;
+}
+
+.contatoDark :-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #8A8987 inset;
+}
+
+
+.contatoDark :-webkit-autofill {
+    -webkit-text-fill-color: #292C2D !important;
+}
+
+
 .contatoDark .esquerda input, .contatoDark .esquerda textarea, .contatoDark .esquerda button{
     background-color: #8A8987;;
 
