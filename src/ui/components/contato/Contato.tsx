@@ -40,7 +40,7 @@ const Contato = ({ darkMode }: props) => {
 
             <form ref={form} action="https://api.staticforms.xyz/submit" method="POST" >
               <input type="hidden" name="accessKey" value={"93ba901b-03a8-45ff-98d0-41490c10f743"}/>
-              <input type="hidden" name="redirectTo" value="https://marcosvinicius.vercel.app/#contatoMenu"></input>
+              <input type="hidden" name="redirectTo" value="https://marcosvinicius.vercel.app/"></input>
 
               <section className="formDentro">
                 <input
