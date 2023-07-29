@@ -36,28 +36,33 @@ const Contato = ({ darkMode }: props) => {
         <p>Aqui você pode preencher o formulário para me enviar um E-mail.</p>
         <div className="conteudo5">
           <div className="esquerda">
-            <form onSubmit={submit} ref={form}>
+
+
+            <form ref={form} action="https://api.staticforms.xyz/submit" method="POST" >
+              <input type="hidden" name="accessKey" value={"93ba901b-03a8-45ff-98d0-41490c10f743"}/>
+              <input type="hidden" name="redirectTo" value="https://marcosvinicius.vercel.app/#contatoMenu"></input>
+
               <section className="formDentro">
                 <input
                   type="text"
-                  name="Nome"
+                  name="name"
                   id="nome"
                   placeholder="Digite seu nome"
                 />
                 <input
                   type="email"
-                  name="Email"
+                  name="email"
                   id="email"
                   placeholder="Digite seu E-mail"
                 />
                 <input
                   type="text"
-                  name="Assunto"
+                  name="subject"
                   id="assunto"
                   placeholder="Digite o assunto"
                 />
                 <textarea
-                  name="Mensagem"
+                  name="message"
                   id="mensagem"
                   placeholder="Digite sua mensagem..."
                   ref={textarea}
@@ -65,6 +70,8 @@ const Contato = ({ darkMode }: props) => {
                 
               </section><button type="submit" id="submit">ENVIAR</button>
             </form>
+
+
           </div>
           <div className="direita">
             <div className="informacoes5">
