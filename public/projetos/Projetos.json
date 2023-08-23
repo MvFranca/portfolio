@@ -33,11 +33,11 @@
     },
     {
       "id": "5",
-      "titulo": "CLONE DUOLINGO",
+      "titulo": "SIMPLIFICA",
       "img": "./projetos/duolingo.png",
       "tecnologias": "HTML, CSS",
       "descricao": "Projeto desenvolvido com React e TypeScript tendo o duolingo como modelo, com um design funcional e responsivo. Futuramente, novas funcionalidades serão adicionadas.",
-      "link": "https://github.com/MvFranca/clone-duolingo"
+      "link": "https://github.com/MvFranca/simplifica"
     },
     {
       "id": "6",
